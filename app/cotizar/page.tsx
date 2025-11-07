@@ -81,7 +81,7 @@ export default function CotizarPage() {
 
               {/* CTA */}
               <Link
-                href="/almacenamiento"
+                href="/cotizar/almacenamiento"
                 className="block w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white text-center py-4 rounded-lg font-semibold transition-colors"
               >
                 Cotizar Almacenamiento
@@ -142,7 +142,7 @@ export default function CotizarPage() {
 
               {/* CTA */}
               <Link
-                href="/modelo-estandar"
+                href="/cotizar/modelo-estandar"
                 className="block w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white text-center py-4 rounded-lg font-semibold transition-colors"
               >
                 Cotizar Modelo Estándar
@@ -203,7 +203,7 @@ export default function CotizarPage() {
 
               {/* CTA */}
               <Link
-                href="/personalizado"
+                href="/cotizar/personalizado"
                 className="block w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white text-center py-4 rounded-lg font-semibold transition-colors"
               >
                 Cotizar Mi Proyecto
