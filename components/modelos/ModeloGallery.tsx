@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface ModeloGalleryProps {
   imagenes: string[];
@@ -29,14 +30,14 @@ export default function ModeloGallery({ imagenes, nombre }: ModeloGalleryProps) 
 
         {/* Imagen Principal */}
         <div className="relative aspect-[4/3] bg-slate-100 rounded-2xl overflow-hidden group">
-          <img
+          <Image
             src={imagenes[currentIndex]}
             alt={`${nombre} - Imagen ${currentIndex + 1}`}
-            className="w-full h-full object-cover cursor-zoom-in"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+            className="object-cover cursor-zoom-in"
             onClick={() => setShowLightbox(true)}
-            onError={(e) => {
-              e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="600"%3E%3Crect fill="%23f1f5f9" width="800" height="600"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" fill="%2394a3b8" font-size="24" font-family="sans-serif"%3EImagen no disponible%3C/text%3E%3C/svg%3E';
-            }}
           />
 
           {/* Navegación Arrows */}
@@ -99,13 +100,12 @@ export default function ModeloGallery({ imagenes, nombre }: ModeloGalleryProps) 
                              ? 'border-[#D32F2F] ring-2 ring-[#D32F2F]/20'
                              : 'border-slate-200 hover:border-slate-300'}`}
               >
-                <img
+                <Image
                   src={imagen}
                   alt={`Thumbnail ${index + 1}`}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="80" height="80"%3E%3Crect fill="%23f1f5f9" width="80" height="80"/%3E%3C/svg%3E';
-                  }}
+                  width={80}
+                  height={80}
+                  className="object-cover"
                 />
               </button>
             ))}
@@ -136,11 +136,13 @@ export default function ModeloGallery({ imagenes, nombre }: ModeloGalleryProps) 
             </svg>
           </button>
 
-          <div className="relative max-w-7xl w-full" onClick={(e) => e.stopPropagation()}>
-            <img
+          <div className="relative max-w-7xl w-full h-[90vh]" onClick={(e) => e.stopPropagation()}>
+            <Image
               src={imagenes[currentIndex]}
               alt={`${nombre} - Imagen ampliada ${currentIndex + 1}`}
-              className="w-full h-auto max-h-[90vh] object-contain"
+              fill
+              sizes="100vw"
+              className="object-contain"
             />
 
             {/* Navegación en Lightbox */}

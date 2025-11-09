@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 // Type-safe data structure
 interface GalleryItem {
@@ -89,11 +90,12 @@ export default function GallerySection() {
                          hover:shadow-2xl hover:scale-[1.02]"
             >
               {/* Imagen real optimizada */}
-              <img
+              <Image
                 src={item.image}
                 alt={item.title}
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
               />
 
               {/* Overlay gradient para legibilidad */}
