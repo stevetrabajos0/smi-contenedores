@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import PhoneField from '../inputs/PhoneField';
-import PostalCodeField from '../inputs/PostalCodeField';
 
 interface ContactDetailsProps {
   onSubmit: (data: any) => void;

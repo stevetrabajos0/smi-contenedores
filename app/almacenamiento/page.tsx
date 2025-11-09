@@ -1,22 +1,17 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import toast, { Toaster } from 'react-hot-toast';
 import ContactFields from '@/components/forms/shared/ContactFields';
-import SelectField from '@/components/forms/shared/SelectField';
 import ContactModal from '@/components/modals/ContactModal';
 import LocationSection from '@/components/sections/LocationSection';
 import { getWhatsAppLink, WHATSAPP_MESSAGES } from '@/lib/constants';
-import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import es from 'date-fns/locale/es';
 
 const STORAGE_KEY = 'smi-storage-form';
 
 export default function AlmacenamientoPage() {
-  const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);

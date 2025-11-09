@@ -1,16 +1,5 @@
 import { z } from 'zod';
 
-// Patrón helper para campos opcionales con validación
-const optionalPostalCode = z.union([
-  z.string().length(5).regex(/^\d+$/),
-  z.literal('')
-]).optional();
-
-const optionalString = z.union([
-  z.string().min(1),
-  z.literal('')
-]).optional();
-
 // STORAGE FORM SCHEMA
 export const storageSchema = z.object({
   // Datos del servicio

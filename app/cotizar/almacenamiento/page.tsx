@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import toast, { Toaster } from 'react-hot-toast';
 import ContactFields from '@/components/forms/shared/ContactFields';
 import SelectField from '@/components/forms/shared/SelectField';
@@ -16,7 +15,6 @@ import { DESCUENTOS_DURACION } from '@/lib/constants/pricing';
 import { logger } from '@/lib/utils';
 
 export default function AlmacenamientoPage() {
-  const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);

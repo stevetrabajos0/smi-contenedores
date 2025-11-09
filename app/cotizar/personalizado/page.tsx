@@ -1,22 +1,18 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import toast, { Toaster } from 'react-hot-toast';
 import FormLayout from '@/components/forms/FormLayout';
-import ProgressIndicator from '@/components/forms/ProgressIndicator';
 import ProjectTypeGrid from '@/components/forms/custom/ProjectTypeGrid';
 import Specifications from '@/components/forms/custom/Specifications';
 import BudgetTimeline from '@/components/forms/custom/BudgetTimeline';
 import WhatsAppButton from '@/components/forms/WhatsAppButton';
 import PhoneField from '@/components/forms/inputs/PhoneField';
-import SelectField from '@/components/forms/shared/SelectField';
 import { loadFormData, saveFormData, clearFormData, STORAGE_KEYS } from '@/lib/constants/storage-keys';
 import SuccessInline from '@/app/cotizar/_components/SuccessInline';
 import { logger } from '@/lib/utils';
 
 export default function PersonalizadoPage() {
-  const router = useRouter();
   const [isMounted, setIsMounted] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState<any>(() => {

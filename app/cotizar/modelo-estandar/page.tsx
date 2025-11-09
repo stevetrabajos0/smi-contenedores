@@ -1,38 +1,17 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import toast, { Toaster } from 'react-hot-toast';
 import FormLayout from '@/components/forms/FormLayout';
-import ProgressIndicator from '@/components/forms/ProgressIndicator';
 import ModelGrid from '@/components/forms/standard/ModelGrid';
 import TimelineBudget from '@/components/forms/standard/TimelineBudget';
 import ContactDetails from '@/components/forms/standard/ContactDetails';
 import WhatsAppButton from '@/components/forms/WhatsAppButton';
-import PricingSidebar from '@/components/forms/shared/PricingSidebar';
 import { loadFormData, saveFormData, clearFormData, STORAGE_KEYS } from '@/lib/constants/storage-keys';
-import { PRECIOS_BASE_MODELOS, type ModeloEstandar } from '@/lib/constants/pricing';
+import type { ModeloEstandar } from '@/lib/constants/pricing';
 import { logger } from '@/lib/utils';
 
-// Helper function to convert modelo slug to pricing key
-function getModeloKey(modeloSlug: string): ModeloEstandar {
-  // Convert '10-pies' → '10', '20-pies' → '20', '40-pies' → '40'
-  const match = modeloSlug?.match(/^(\d+)-pies$/);
-  return (match ? match[1] : '20') as ModeloEstandar;
-}
-
-// Helper function to get modelo name
-function getModeloName(modeloSlug: string): string {
-  const modeloNames: Record<string, string> = {
-    '10-pies': 'Modelo 10 Pies',
-    '20-pies': 'Modelo 20 Pies',
-    '40-pies': 'Modelo 40 Pies',
-  };
-  return modeloNames[modeloSlug] || 'Modelo Estándar';
-}
-
 export default function ModeloEstandarPage() {
-  const router = useRouter();
   const [isMounted, setIsMounted] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState<any>(() => {

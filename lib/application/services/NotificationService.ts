@@ -61,8 +61,6 @@ export class NotificationService {
         trackingCode: payload.trackingCode,
       });
 
-      const emailContent = this.buildEmailTemplate(payload);
-
       // TODO: Integrate with email service
       // Example with SendGrid:
       // await sgMail.send({
