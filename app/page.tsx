@@ -1,18 +1,14 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getWhatsAppLink, WHATSAPP_MESSAGES, SMI_WHATSAPP_URL, SMI_WHATSAPP_DISPLAY } from '@/lib/constants';
-import GeneralContactForm from '@/components/forms/GeneralContactForm';
-import ContactModal from '@/components/modals/ContactModal';
 import GallerySection from '@/components/home/GallerySection';
 import HowItWorksSection from '@/components/home/HowItWorksSection';
 import FAQSection from '@/components/home/FAQSection';
 import LocationSection from '@/components/sections/LocationSection';
 
 export default function HomePage() {
-  const [contactModalOpen, setContactModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-white">
@@ -76,12 +72,14 @@ export default function HomePage() {
                   </svg>
                 </a>
 
-                <button
-                  onClick={() => setContactModalOpen(true)}
-                  className="bg-white/10 backdrop-blur-sm hover:bg-white/20 border-2 border-white/30 hover:border-white/50 text-white px-10 py-5 rounded-lg font-semibold text-lg transition-all"
+                <a
+                  href={getWhatsAppLink(WHATSAPP_MESSAGES.general)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/10 backdrop-blur-sm hover:bg-white/20 border-2 border-white/30 hover:border-white/50 text-white px-10 py-5 rounded-lg font-semibold text-lg transition-all inline-flex items-center justify-center"
                 >
                   Hablar por WhatsApp
-                </button>
+                </a>
               </div>
 
                 {/* Small text */}
@@ -269,13 +267,6 @@ export default function HomePage() {
 
       {/* SECCIÓN DE UBICACIÓN + CONTACTO */}
       <LocationSection />
-
-      {/* Contact Modal */}
-      <ContactModal
-        isOpen={contactModalOpen}
-        onClose={() => setContactModalOpen(false)}
-        source="modal-homepage"
-      />
 
     </div>
   );

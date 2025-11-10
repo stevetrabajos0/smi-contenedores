@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import toast, { Toaster } from 'react-hot-toast';
 import ContactFields from '@/components/forms/shared/ContactFields';
-import ContactModal from '@/components/modals/ContactModal';
 import LocationSection from '@/components/sections/LocationSection';
 import { getWhatsAppLink, WHATSAPP_MESSAGES } from '@/lib/constants';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -17,7 +16,6 @@ export default function AlmacenamientoPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [contactModalOpen, setContactModalOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
@@ -2044,13 +2042,6 @@ export default function AlmacenamientoPage() {
 
       </main>
 
-      {/* Contact Modal */}
-      <ContactModal
-        isOpen={contactModalOpen}
-        onClose={() => setContactModalOpen(false)}
-        preSelectedService="almacenamiento-mudanza"
-        source="modal-almacenamiento-page"
-      />
     </>
   );
 }
