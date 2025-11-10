@@ -13,8 +13,7 @@ export default function LocationSection() {
             Encuéntranos en Hermosillo
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Visita nuestro parque de contenedores o déjanos tus datos y
-            te contactamos en menos de 2 horas.
+            Visita nuestro parque de contenedores.
           </p>
         </div>
 
@@ -41,8 +40,10 @@ export default function LocationSection() {
 
               {/* Address and external link */}
               <div className="mt-4 text-center">
-                <p className="text-sm sm:text-base text-slate-600 mb-2">
-                  📍 Hermosillo, Sonora, México
+                <p className="text-sm sm:text-base text-slate-600 mb-2 leading-relaxed">
+                  📍 Blvd. José Alberto Healy #1509<br />
+                  Col. La Caridad<br />
+                  Hermosillo, Sonora
                 </p>
                 <a
                   href="https://www.google.com/maps/place/SMI+Contenedores+%7C+Venta+y+Renta+de+Contenedores+y+Proyectos./@29.197044775361128,-111.00396532414285,17z"
@@ -111,9 +112,6 @@ export default function LocationSection() {
                                   transition-colors">
                       {SMI_WHATSAPP_DISPLAY}
                     </a>
-                    <p className="text-xs text-slate-500 mt-1">
-                      Respuesta en menos de 1 hora
-                    </p>
                   </div>
                 </div>
 
@@ -150,11 +148,6 @@ export default function LocationSection() {
                 </svg>
                 Chatear Ahora
               </a>
-
-              {/* Social Proof */}
-              <p className="text-sm text-slate-500 mt-6">
-                ⏱️ Respuesta en menos de 2 horas
-              </p>
             </div>
 
             {/* Additional Info */}
