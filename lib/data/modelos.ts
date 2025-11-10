@@ -3,50 +3,6 @@ import { PRECIOS_BASE_MODELOS } from '@/lib/constants/pricing';
 // Data de modelos estándar (compartida entre lista y páginas individuales)
 export const modelos = [
   {
-    id: 'modelo-10',
-    nombre: 'Modelo 10 Pies',
-    metros: '7m²',
-    metros_number: 7,
-    contenedor: '10 pies',
-    dimensiones: '2.99m × 2.44m × 2.59m',
-    peso: '2,200 kg',
-    imagenes: [
-      '/images/modelos/10-pies/exterior-frontal.jpg',
-      '/images/modelos/10-pies/exterior-lateral.jpg',
-      '/images/modelos/10-pies/interior-general.jpg'
-    ],
-    precio_desde: PRECIOS_BASE_MODELOS['10'],
-    descripcion: 'Espacio base compacto listo para personalizar según tu visión. Estructura certificada con todas las instalaciones base incluidas. Ideal para studio individual, oficina compacta o caseta de vigilancia.',
-    use_case: 'Perfecto para 1 persona o espacio de trabajo individual',
-    incluye_base: [
-      'Pintura del color que elijas (exterior e interior)',
-      'Minisplit 1 ton incluido e instalado',
-      'Ventana corredera + puerta con cerradura',
-      'Instalación eléctrica completa (contactos, apagadores, centro de carga)'
-    ],
-    personaliza: [
-      'Añadir baño completo (+$15-20K)',
-      'Añadir muebles fijos (+$8-15K)'
-    ],
-    ideal_para: [
-      'Studio individual',
-      'Oficina compacta 2-3 personas',
-      'Caseta de vigilancia',
-      'Espacio de almacenamiento premium'
-    ],
-    specs_tecnicas: {
-      'Área útil': '7m²',
-      'Altura interior': '2.39m',
-      'Aislamiento': 'Poliuretano expandido 50mm',
-      'Ventanas': '1 ventana corredera',
-      'Puertas': '1 puerta de acceso',
-      'Capacidad eléctrica': '110V/220V preparado'
-    },
-    tiempo_entrega: '2-3 semanas',
-    slug: '10-pies',
-    badge: 'OFICINA PERSONAL'
-  },
-  {
     id: 'modelo-20',
     nombre: 'Modelo 20 Pies',
     metros: '14m²',
@@ -138,6 +94,50 @@ export const modelos = [
     tiempo_entrega: '4-5 semanas',
     slug: '40-pies',
     badge: 'FAMILIAS'
+  },
+  {
+    id: 'modelo-10',
+    nombre: 'Modelo 10 Pies',
+    metros: '7m²',
+    metros_number: 7,
+    contenedor: '10 pies',
+    dimensiones: '2.99m × 2.44m × 2.59m',
+    peso: '2,200 kg',
+    imagenes: [
+      '/images/modelos/10-pies/exterior-frontal.jpg',
+      '/images/modelos/10-pies/exterior-lateral.jpg',
+      '/images/modelos/10-pies/interior-general.jpg'
+    ],
+    precio_desde: PRECIOS_BASE_MODELOS['10'],
+    descripcion: 'Espacio base compacto listo para personalizar según tu visión. Estructura certificada con todas las instalaciones base incluidas. Ideal para studio individual, oficina compacta o caseta de vigilancia.',
+    use_case: 'Perfecto para 1 persona o espacio de trabajo individual',
+    incluye_base: [
+      'Pintura del color que elijas (exterior e interior)',
+      'Minisplit 1 ton incluido e instalado',
+      'Ventana corredera + puerta con cerradura',
+      'Instalación eléctrica completa (contactos, apagadores, centro de carga)'
+    ],
+    personaliza: [
+      'Añadir baño completo (+$15-20K)',
+      'Añadir muebles fijos (+$8-15K)'
+    ],
+    ideal_para: [
+      'Studio individual',
+      'Oficina compacta 2-3 personas',
+      'Caseta de vigilancia',
+      'Espacio de almacenamiento premium'
+    ],
+    specs_tecnicas: {
+      'Área útil': '7m²',
+      'Altura interior': '2.39m',
+      'Aislamiento': 'Poliuretano expandido 50mm',
+      'Ventanas': '1 ventana corredera',
+      'Puertas': '1 puerta de acceso',
+      'Capacidad eléctrica': '110V/220V preparado'
+    },
+    tiempo_entrega: '2-3 semanas',
+    slug: '10-pies',
+    badge: 'OFICINA PERSONAL'
   }
 ];
 
