@@ -85,183 +85,73 @@ export default function ModeloEstandarPage() {
 
   return (
     <main>
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* HERO - ULTRA COMPACT */}
+      <section className="relative bg-white py-6 sm:py-8 min-h-[22vh] sm:min-h-[25vh]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/images/hero-modelo-estandar.jpg"
-            alt="Casa moderna de contenedores - Modelo estándar"
-            className="w-full h-full object-cover"
-          />
-          {/* Overlay más oscuro para legibilidad */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
-        </div>
+          {/* Back Link */}
+          <Link
+            href="/"
+            className="inline-flex items-center gap-1 text-xs text-slate-600
+                       hover:text-[#D32F2F] mb-4 transition-colors"
+          >
+            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Volver
+          </Link>
 
-        {/* Content */}
-        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+          {/* Headline */}
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-1">
+            Oficinas y Casas Listas
+          </h1>
 
-          {/* Badge */}
-          <div className="inline-block bg-white/10 backdrop-blur-sm border-2 border-white/20
-                          px-4 py-2 rounded-full mb-8
-                          animate-in fade-in slide-in-from-top-3 duration-500">
-            <span className="text-white font-semibold text-sm sm:text-base">
-              Modelos Estándar
+          {/* Subtitle */}
+          <p className="text-base sm:text-lg text-slate-600 mb-4">
+            Modelos estándar desde $130K + IVA • Entrega en 2-5 semanas
+          </p>
+
+          {/* Trust Items - Inline */}
+          <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm text-slate-600">
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              3 tamaños disponibles
+            </span>
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              Personalizable
+            </span>
+            <span className="flex items-center gap-1">
+              <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              Entrega gratis Hmo
             </span>
           </div>
 
-          {/* H1 */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight
-                         animate-in fade-in slide-in-from-top-4 duration-700">
-            Oficinas y Casas de Contenedor — Listas en 2-4 Semanas
-          </h1>
-
-          {/* Subheading */}
-          <p className="text-lg sm:text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed
-                        animate-in fade-in slide-in-from-top-5 duration-900">
-            Diseños probados con precios fijos. Desde $130,000.
-            <br className="hidden sm:block" />
-            Personaliza color, acabados y distribución según tu gusto.
-          </p>
-
-          {/* Benefits Box */}
-          <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20
-                          rounded-2xl p-6 sm:p-10 mb-12
-                          max-w-2xl mx-auto shadow-2xl
-                          animate-in fade-in zoom-in-95 duration-1000">
-            <ul className="space-y-4 text-left">
-
-              {/* Benefit 1 */}
-              <li className="flex items-start gap-3 group">
-                <svg className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5
-                                group-hover:scale-110 transition-transform"
-                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                </svg>
-                <span className="text-white text-base sm:text-lg font-medium leading-relaxed">
-                  3 tamaños: 10 pies ($130K), 20 pies ($230K), 40 pies ($330K)
-                </span>
-              </li>
-
-              {/* Benefit 2 */}
-              <li className="flex items-start gap-3 group">
-                <svg className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5
-                                group-hover:scale-110 transition-transform"
-                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                </svg>
-                <span className="text-white text-base sm:text-lg font-medium leading-relaxed">
-                  Entrega garantizada en 2-5 semanas según modelo
-                </span>
-              </li>
-
-              {/* Benefit 3 */}
-              <li className="flex items-start gap-3 group">
-                <svg className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5
-                                group-hover:scale-110 transition-transform"
-                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                </svg>
-                <span className="text-white text-base sm:text-lg font-medium leading-relaxed">
-                  Pintura del color que elijas + instalación eléctrica completa
-                </span>
-              </li>
-
-              {/* Benefit 4 */}
-              <li className="flex items-start gap-3 group">
-                <svg className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5
-                                group-hover:scale-110 transition-transform"
-                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                </svg>
-                <span className="text-white text-base sm:text-lg font-medium leading-relaxed">
-                  Incluye clima (minisplit), ventanas y puerta con cerradura
-                </span>
-              </li>
-
-              {/* Benefit 5 */}
-              <li className="flex items-start gap-3 group">
-                <svg className="w-6 h-6 text-green-400 flex-shrink-0 mt-0.5
-                                group-hover:scale-110 transition-transform"
-                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                </svg>
-                <span className="text-white text-base sm:text-lg font-medium leading-relaxed">
-                  Personaliza con baño (+$15-30K) y cocina (+$13K)
-                </span>
-              </li>
-
-            </ul>
-          </div>
-
-          {/* CTA Button */}
-          <button
-            onClick={() => {
-              const modelosSection = document.getElementById('modelos');
-              if (modelosSection) {
-                modelosSection.scrollIntoView({
-                  behavior: 'smooth',
-                  block: 'start'
-                });
-              }
-            }}
-            className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white
-                       px-10 sm:px-12 py-4 rounded-lg
-                       font-semibold text-base sm:text-lg
-                       transition-all duration-200
-                       shadow-xl hover:shadow-2xl hover:scale-105
-                       inline-flex items-center gap-2
-                       animate-in fade-in zoom-in-95 duration-1000 delay-200"
-          >
-            Ver Modelos y Precios Exactos
-            <svg className="w-5 h-5 transition-transform group-hover:translate-y-1"
-                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-
-          {/* Cross-sell Link */}
-          <p className="mt-6 text-white/70 text-sm sm:text-base
-                        animate-in fade-in duration-1000 delay-300">
-            ¿Necesitas algo único?{' '}
-            <Link
-              href="/personalizado"
-              className="text-white hover:text-white/90 underline underline-offset-2
-                         transition-colors font-medium"
-            >
-              Proyectos Personalizados
-            </Link>
-          </p>
-
         </div>
-
-        {/* Scroll Indicator (opcional) */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10
-                        animate-bounce hidden sm:block">
-          <svg className="w-6 h-6 text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
-
       </section>
 
       {/* Sección: Nuestros Modelos */}
       <section id="modelos" className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          {/* Header - Compact */}
+          <div className="text-center mb-6 px-4 sm:px-6">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900 mb-2">
               Nuestros Modelos Estándar
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto">
               Base lista para personalizar según tu visión. Precio fijo, distribución flexible.
             </p>
           </div>
 
-          {/* Grid de Modelos */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {/* DESKTOP: Grid de Modelos */}
+          <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {modelos.map((modelo) => (
               <div
                 key={modelo.id}
@@ -346,6 +236,105 @@ export default function ModeloEstandarPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* MOBILE: Horizontal Scroll */}
+          <div className="sm:hidden mb-4">
+            <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 px-4 -mx-4
+                            [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              {modelos.map((modelo) => (
+                <div
+                  key={modelo.id}
+                  className="flex-shrink-0 w-[280px] snap-center
+                             group bg-white border-2 border-slate-200
+                             hover:border-[#D32F2F] rounded-2xl overflow-hidden
+                             transition-all duration-300 hover:shadow-xl"
+                >
+                  {/* Imagen */}
+                  <div className="relative aspect-[4/3] bg-slate-100 overflow-hidden">
+                    <img
+                      src={modelo.imagenes?.[0] || ''}
+                      alt={modelo.nombre}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      onError={(e) => {
+                        // Fallback si la imagen no existe
+                        e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23f1f5f9" width="400" height="300"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" fill="%2394a3b8" font-size="20" font-family="sans-serif"%3E' + modelo.metros + '%3C/text%3E%3C/svg%3E';
+                      }}
+                    />
+
+                    {/* Badge */}
+                    <div className="absolute top-4 right-4 bg-[#D32F2F] text-white
+                                    px-3 py-1 rounded-full text-xs font-bold uppercase">
+                      {modelo.badge}
+                    </div>
+                  </div>
+
+                  {/* Contenido */}
+                  <div className="p-6">
+
+                    {/* Título */}
+                    <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                      {modelo.nombre}
+                    </h3>
+
+                    {/* Metros */}
+                    <p className="text-slate-500 text-sm mb-1">
+                      {modelo.metros} útiles
+                    </p>
+
+                    {/* Use Case */}
+                    {(modelo as any).use_case && (
+                      <p className="text-sm text-slate-600 mb-6">
+                        {(modelo as any).use_case}
+                      </p>
+                    )}
+
+                    {/* Timeline Bullet (solo 1) */}
+                    <ul className="space-y-3 mb-6">
+                      {getModeloBullets(modelo.id).map((bullet, index) => (
+                        <li key={index} className="flex items-start gap-2 text-slate-600">
+                          <svg className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5"
+                               fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+                          </svg>
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Divider */}
+                    <div className="h-px bg-slate-200 mb-4" />
+
+                    {/* Precio */}
+                    <div className="mb-6">
+                      <p className="text-sm text-slate-600 mb-1">Desde</p>
+                      <p className="text-3xl font-bold text-slate-900">
+                        ${modelo.precio_desde.toLocaleString('es-MX')}
+                        <span className="text-lg text-slate-600 font-normal"> + IVA</span>
+                      </p>
+                    </div>
+
+                    {/* CTA */}
+                    <button
+                      onClick={() => handleVerDetalles(modelo)}
+                      className="w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white
+                                 py-3 px-6 rounded-lg font-semibold
+                                 transition-colors"
+                    >
+                      Ver Detalles y Cotizar
+                    </button>
+
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Scroll Indicator Dots */}
+            <div className="flex justify-center gap-2 mt-2">
+              <div className="w-2 h-2 rounded-full bg-[#D32F2F]" />
+              <div className="w-2 h-2 rounded-full bg-slate-300" />
+              <div className="w-2 h-2 rounded-full bg-slate-300" />
+            </div>
           </div>
 
           {/* Nota Explicativa - Texto discreto tipo footnote */}
