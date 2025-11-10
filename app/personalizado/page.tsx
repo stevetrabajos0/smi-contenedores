@@ -548,8 +548,8 @@ export default function PersonalizadoLandingPage() {
                     Consulta Inicial
                   </h3>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
-                    Platicamos tu visión por llamada o en persona. Te educamos sobre opciones,
-                    requisitos de terreno y viabilidad del proyecto. Tú evalúas si tu terreno es apto.
+                    Conversamos por llamada o en persona sobre tu proyecto. Exploramos juntos las
+                    posibilidades según tu espacio disponible, presupuesto y visión del resultado final.
                   </p>
                   <p className="text-xs sm:text-sm text-slate-500 font-medium">
                     ⏱️ 30-60 minutos
