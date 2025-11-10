@@ -54,94 +54,71 @@ export default function PersonalizadoLandingPage() {
   return (
     <div className="min-h-screen bg-slate-50">
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-slate-900 to-slate-800 py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
+      {/* HERO - CENTERED & IMPOSING */}
+      <section className="relative bg-gradient-to-b from-slate-50 to-white py-6 sm:py-8 min-h-[22vh] sm:min-h-[20vh]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
 
-            {/* Badge */}
-            <div className="inline-block mb-6">
-              <span className="bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium">
-                Proyectos Personalizados
-              </span>
+          {/* Back Link */}
+          <Link
+            href="/"
+            className="inline-flex items-center gap-1.5 text-sm text-slate-600
+                       hover:text-[#D32F2F] mb-6 transition-colors"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Volver
+          </Link>
+
+          {/* CENTERED HERO TITLE - IMPOSING */}
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900
+                         text-center mb-2 tracking-tight">
+            Proyectos Personalizados
+          </h1>
+
+          {/* CENTERED SUBTITLE */}
+          <p className="text-lg sm:text-xl text-slate-600 text-center font-medium mb-6">
+            a tu Medida
+          </p>
+
+          {/* CENTERED TRUST SIGNALS - COMPACT */}
+          <div className="flex flex-wrap justify-center items-center gap-4 text-sm">
+
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span className="text-slate-700">Desde $100K hasta $1M+</span>
             </div>
 
-            {/* Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Casas, Locales Comerciales y Proyectos Industriales a tu Medida
-            </h1>
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span className="text-slate-700">100% personalizado</span>
+            </div>
 
-            {/* Subheading */}
-            <p className="text-xl sm:text-2xl text-white/90 mb-8">
-              Desde $100K hasta proyectos multi-contenedor de $1M+. Diseñamos según tu visión específica. Listo en 8-16 semanas.
-            </p>
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span className="text-slate-700">8-16 semanas</span>
+            </div>
 
-            {/* Bullets con ejemplos concretos */}
-            <ul className="space-y-4 mb-12 max-w-2xl mx-auto">
-              <li className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-                </svg>
-                <span className="text-white/90 text-lg text-left">Casas de 3+ recámaras con layout personalizado</span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-                </svg>
-                <span className="text-white/90 text-lg text-left">Locales comerciales (restaurantes, oficinas, retail)</span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-                </svg>
-                <span className="text-white/90 text-lg text-left">Proyectos industriales y espacios multi-uso</span>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-                </svg>
-                <span className="text-white/90 text-lg text-left">Configuraciones únicas que no existen en modelos estándar</span>
-              </li>
-            </ul>
-
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/cotizar/personalizado"
-                className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white
-                         px-8 py-4 rounded-lg font-semibold text-lg
-                         transition-colors shadow-xl hover:shadow-2xl
-                         inline-flex items-center justify-center"
-              >
-                Cotizar Mi Proyecto
-              </Link>
-
-              <button
-                onClick={() => {
-                  const ejemplos = document.getElementById('ejemplos');
-                  ejemplos?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="border-2 border-white/30 hover:border-white/50
-                         hover:bg-white/10 text-white
-                         px-8 py-4 rounded-lg font-semibold text-lg
-                         transition-colors inline-flex items-center justify-center gap-2"
-              >
-                Ver Proyectos Realizados
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span className="text-slate-700">Diseño profesional</span>
             </div>
 
           </div>
+
         </div>
       </section>
 
       {/* Ejemplos Section */}
-      <section id="ejemplos" className="py-20 lg:py-28 bg-white">
+      <section id="ejemplos" className="pt-2 pb-8 sm:pt-4 sm:pb-12 lg:pt-6 lg:pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center mb-12">
