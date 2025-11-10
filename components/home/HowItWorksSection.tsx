@@ -7,27 +7,22 @@ interface ProcessStep {
   description: string;
 }
 
-// 4 pasos unificados - proceso real SMI
+// 3 pasos - flujo de usuario para cotizar
 const PROCESS_STEPS: ProcessStep[] = [
   {
     number: '1',
-    title: 'Cotiza en Minutos',
-    description: 'Responde 5-8 preguntas según lo que necesites. Precio transparente al instante.'
+    title: 'Elige tu Servicio',
+    description: 'Oficinas listas, almacenamiento o proyecto a tu medida'
   },
   {
     number: '2',
-    title: 'Confirma y Paga',
-    description: 'Anticipo según proyecto: desde depósito de 1 mes hasta 50% para construcción.'
+    title: 'Completa el Formulario',
+    description: '5-8 preguntas simples según lo que necesites'
   },
   {
     number: '3',
-    title: 'Construimos o Entregamos',
-    description: 'De 1-3 días para almacenamiento hasta 16 semanas para proyectos personalizados.'
-  },
-  {
-    number: '4',
-    title: 'Instalamos en Tu Ubicación',
-    description: 'Entrega con transporte incluido en Hermosillo. $60/km fuera de la ciudad.'
+    title: 'Recibe Cotización',
+    description: 'Propuesta detallada en minutos por WhatsApp'
   }
 ];
 
@@ -42,7 +37,7 @@ export default function HowItWorksSection() {
             Cómo Funciona
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Proceso transparente en 4 pasos. De cotización a entrega.
+            Cotiza tu proyecto en 3 pasos
           </p>
         </div>
 
@@ -53,8 +48,8 @@ export default function HowItWorksSection() {
           <div className="absolute top-12 left-[12%] right-[12%] h-1 bg-slate-300"
                style={{zIndex: 0}} />
 
-          {/* Grid de 4 columnas */}
-          <div className="grid grid-cols-4 gap-8 relative z-10">
+          {/* Grid de 3 columnas */}
+          <div className="grid grid-cols-3 gap-8 relative z-10">
             {PROCESS_STEPS.map((step) => (
               <div key={step.number} className="flex flex-col items-center">
 
@@ -112,13 +107,13 @@ export default function HowItWorksSection() {
 
         {/* CTA final */}
         <div className="text-center mt-16">
-          <Link
-            href="/cotizar"
+          <a
+            href="#servicios"
             className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C]
                        text-white px-8 py-4 rounded-lg font-semibold text-lg
                        transition-colors duration-200 shadow-xl hover:shadow-2xl">
             Empezar Mi Cotización →
-          </Link>
+          </a>
           <p className="text-sm text-slate-500 mt-4">
             Sin compromiso. Precio transparente en minutos.
           </p>
