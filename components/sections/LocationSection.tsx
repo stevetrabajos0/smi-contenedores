@@ -145,11 +145,6 @@ export default function LocationSection() {
                 Chatear Ahora
               </a>
             </div>
-
-            {/* Additional Info */}
-            <p className="text-sm text-slate-500 text-center mt-4">
-              También puedes llamarnos al {SMI_WHATSAPP_DISPLAY}
-            </p>
           </div>
 
         </div>
