@@ -1331,9 +1331,9 @@ export default function AlmacenamientoPage() {
                 </div>
 
                 {/* Icon */}
-                <div className="w-16 h-16 bg-[#D32F2F] bg-opacity-10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#D32F2F] transition-colors">
+                <div className="w-16 h-16 bg-[#D32F2F] rounded-xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-[#B71C1C]">
                   <Calendar
-                    className="w-8 h-8 text-[#D32F2F] group-hover:text-white transition-colors"
+                    className="w-8 h-8 text-white"
                     strokeWidth={2}
                   />
                 </div>
@@ -1427,9 +1427,9 @@ export default function AlmacenamientoPage() {
               <div className="bg-slate-50 border-2 border-slate-200 rounded-2xl p-8 hover:border-[#D32F2F] transition-all duration-200 group">
 
                 {/* Icon */}
-                <div className="w-16 h-16 bg-[#D32F2F] bg-opacity-10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#D32F2F] transition-colors">
+                <div className="w-16 h-16 bg-[#D32F2F] rounded-xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-[#B71C1C]">
                   <Home
-                    className="w-8 h-8 text-[#D32F2F] group-hover:text-white transition-colors"
+                    className="w-8 h-8 text-white"
                     strokeWidth={2}
                   />
                 </div>
@@ -1523,9 +1523,9 @@ export default function AlmacenamientoPage() {
               <div className="bg-slate-50 border-2 border-slate-200 rounded-2xl p-8 hover:border-[#D32F2F] transition-all duration-200 group">
 
                 {/* Icon */}
-                <div className="w-16 h-16 bg-[#D32F2F] bg-opacity-10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#D32F2F] transition-colors">
+                <div className="w-16 h-16 bg-[#D32F2F] rounded-xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-[#B71C1C]">
                   <Truck
-                    className="w-8 h-8 text-[#D32F2F] group-hover:text-white transition-colors"
+                    className="w-8 h-8 text-white"
                     strokeWidth={2}
                   />
                 </div>
