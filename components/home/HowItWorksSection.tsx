@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 
 // Type-safe data structure
@@ -80,10 +82,10 @@ export default function HowItWorksSection() {
         <div className="lg:hidden space-y-10">
           {PROCESS_STEPS.map((step) => (
             <div key={step.number}
-                 className="flex gap-8 items-start">
+                 className="flex flex-col items-center gap-6">
 
               {/* Número */}
-              <div className="flex-shrink-0">
+              <div>
                 <div className="w-20 h-20 rounded-full bg-[#D32F2F]
                                 flex items-center justify-center shadow-lg">
                   <span className="text-white text-3xl font-bold">
@@ -93,7 +95,7 @@ export default function HowItWorksSection() {
               </div>
 
               {/* Contenido */}
-              <div className="flex-1 pt-3">
+              <div className="text-center">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
                   {step.title}
                 </h3>
@@ -107,13 +109,14 @@ export default function HowItWorksSection() {
 
         {/* CTA final */}
         <div className="text-center mt-16">
-          <a
-            href="#servicios"
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C]
                        text-white px-8 py-4 rounded-lg font-semibold text-lg
-                       transition-colors duration-200 shadow-xl hover:shadow-2xl">
+                       transition-colors duration-200 shadow-xl hover:shadow-2xl
+                       cursor-pointer">
             Empezar Mi Cotización →
-          </a>
+          </button>
           <p className="text-sm text-slate-500 mt-4">
             Sin compromiso. Precio transparente en minutos.
           </p>
