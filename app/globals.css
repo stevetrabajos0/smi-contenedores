@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --color-smi-red: #D32F2F;
+}
+
 /* React DatePicker Custom Styles - SMI Theme */
 /* Calendar container */
 .react-datepicker {
