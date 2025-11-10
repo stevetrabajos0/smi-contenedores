@@ -55,9 +55,9 @@ export default function HomePage() {
                          rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
                          cursor-pointer"
             >
-              <div className="text-4xl mb-3">🏢</div>
+              <div className="text-4xl mb-3">🏠</div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">
-                Oficinas Listas
+                Casas y Oficinas Listas
               </h3>
               <p className="text-sm text-slate-600 mb-3">
                 Espacios equipados en 4-8 semanas
@@ -118,7 +118,7 @@ export default function HomePage() {
                 A Tu Medida
               </h3>
               <p className="text-sm text-slate-600 mb-3">
-                Gyms, restaurantes, locales
+                Diseñado específicamente para ti
               </p>
               <p className="text-2xl font-bold text-[#D32F2F] mb-1">
                 A cotizar
