@@ -390,72 +390,70 @@ export default function AlmacenamientoPage() {
 
       <main className="min-h-screen bg-white">
 
-        {/* HERO SECTION - FORM MULTI-PASO INLINE */}
-        <section className="relative min-h-[85vh] flex items-center bg-slate-900">
+        {/* HERO SECTION - COMPACT WITH INLINE FORM */}
+        <section className="relative bg-gradient-to-b from-slate-50 to-white py-6 sm:py-8 min-h-[25vh] sm:min-h-[20vh]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* Background Image */}
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="/images/hero-almacenamiento.jpg"
-              alt="Almacenamiento y mudanza con contenedores en Hermosillo"
-              fill
-              priority
-              quality={90}
-              className="object-cover"
-            />
-            {/* Overlay ligero (30%) */}
-            <div className="absolute inset-0 bg-black/30" />
+            {/* Back navigation */}
+            <Link
+              href="/"
+              className="inline-flex items-center gap-1.5 text-sm text-slate-600
+                         hover:text-[#D32F2F] mb-4 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Volver
+            </Link>
+
+            {/* Headline - ULTRA SHORT */}
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4 text-center">
+              Almacenamiento en Hermosillo
+            </h1>
+
+            {/* 3 Pricing Pills - COMPACT INLINE */}
+            <div className="flex flex-wrap justify-center gap-2 mb-4">
+
+              <div className="inline-flex items-center gap-1.5 bg-white border border-slate-300
+                              rounded-full px-3 py-1.5 text-xs sm:text-sm shadow-sm">
+                <span className="text-base">🚛</span>
+                <span className="text-slate-700">Mudanza</span>
+                <span className="text-[#D32F2F] font-bold">$60/km</span>
+              </div>
+
+              <div className="inline-flex items-center gap-1.5 bg-white border border-slate-300
+                              rounded-full px-3 py-1.5 text-xs sm:text-sm shadow-sm">
+                <span className="text-base">📦</span>
+                <span className="text-slate-700">Renta</span>
+                <span className="text-[#D32F2F] font-bold">$3K/mes</span>
+              </div>
+
+              <div className="inline-flex items-center gap-1.5 bg-white border border-slate-300
+                              rounded-full px-3 py-1.5 text-xs sm:text-sm shadow-sm">
+                <span className="text-base">🏠</span>
+                <span className="text-slate-700">Compra</span>
+                <span className="text-[#D32F2F] font-bold">$55K</span>
+              </div>
+
+            </div>
+
+            {/* Single trust signal - MINIMAL */}
+            <div className="flex items-center justify-center gap-2 mb-8">
+              <svg className="w-4 h-4 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span className="text-xs sm:text-sm text-slate-600">
+                Entrega gratis en Hermosillo • Contenedores 10&apos;, 20&apos; y 40&apos;
+              </span>
+            </div>
+
           </div>
+        </section>
 
-          {/* Content Grid 50/50 */}
-          <div className="relative z-10 w-full">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-              <div className="grid lg:grid-cols-2 gap-8 items-start">
-
-                {/* COLUMNA IZQUIERDA - Copy Compacto */}
-                <div className="text-white">
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                    Almacenamiento en Hermosillo: Renta, Compra o Mudanza
-                  </h1>
-                  <p className="text-xl sm:text-2xl text-white/90 mt-6 leading-relaxed">
-                    Contenedores de 10, 20 y 40 pies para guardar o mover tus cosas.{' '}
-                    <span className="font-semibold text-white">
-                      Desde $3,000/mes renta, $55,000 compra, o $60/km mudanza.
-                    </span>
-                  </p>
-
-                  {/* Bullets compactos - lista vertical */}
-                  <ul className="space-y-3 mt-8">
-                    <li className="flex items-start gap-3 text-white/90">
-                      <svg className="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                      </svg>
-                      <span>Sin contratos largos - Renta mensual flexible</span>
-                    </li>
-                    <li className="flex items-start gap-3 text-white/90">
-                      <svg className="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                      </svg>
-                      <span>Entrega gratis en Hermosillo en 24-48 horas</span>
-                    </li>
-                    <li className="flex items-start gap-3 text-white/90">
-                      <svg className="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                      </svg>
-                      <span>Compra desde $55,000 - Recuperas inversión en 12-21 meses</span>
-                    </li>
-                    <li className="flex items-start gap-3 text-white/90">
-                      <svg className="w-6 h-6 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                      </svg>
-                      <span>Servicio de mudanza local disponible</span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* COLUMNA DERECHA - Form Inline Multi-Paso */}
-                <div className="lg:sticky lg:top-4">
-                  <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 lg:p-8">
+        {/* Form section */}
+        <section className="bg-white pb-20">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 lg:p-8">
 
                     {/* Loading State (durante hydration) */}
                     {!isMounted ? (
@@ -1300,10 +1298,6 @@ export default function AlmacenamientoPage() {
                       </>
                     )}
 
-                  </div>
-                </div>
-
-              </div>
             </div>
           </div>
         </section>
