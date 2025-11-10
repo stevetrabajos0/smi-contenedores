@@ -1637,6 +1637,186 @@ export default function AlmacenamientoPage() {
           </div>
         </section>
 
+        {/* CÓMO FUNCIONA EL SERVICIO */}
+        <section className="bg-white py-12 sm:py-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+
+            {/* Header */}
+            <div className="text-center mb-10 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+                Cómo Funciona el Servicio
+              </h2>
+              <p className="text-base sm:text-lg text-slate-600">
+                Proceso simple y transparente de principio a fin
+              </p>
+            </div>
+
+            {/* Timeline - Vertical on mobile, stays vertical on all sizes */}
+            <div className="relative">
+
+              {/* Vertical line connector (hidden on mobile for cleaner look) */}
+              <div className="hidden sm:block absolute left-6 top-8 bottom-8 w-0.5 bg-slate-200"></div>
+
+              <div className="space-y-8">
+
+                {/* Step 1: Cotiza Online */}
+                <div className="relative flex gap-4 sm:gap-6">
+                  {/* Number circle */}
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                  flex items-center justify-center text-white font-bold text-lg
+                                  shadow-lg z-10">
+                    1
+                  </div>
+                  {/* Content */}
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                      Cotiza Online
+                    </h3>
+                    <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                      Responde 5-6 preguntas sobre tamaño, duración y ubicación. Precio transparente
+                      al instante. Confirma con depósito de 1 mes.
+                    </p>
+                    <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                      ⏱️ 5 minutos
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 2: Entregamos */}
+                <div className="relative flex gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                  flex items-center justify-center text-white font-bold text-lg
+                                  shadow-lg z-10">
+                    2
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                      Entregamos en Tu Ubicación
+                    </h3>
+                    <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                      Llevamos el contenedor donde lo necesites. Hermosillo sin costo,
+                      fuera de la ciudad $60/km.
+                    </p>
+                    <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                      ⏱️ 24-48 horas
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 3: Cargas */}
+                <div className="relative flex gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                  flex items-center justify-center text-white font-bold text-lg
+                                  shadow-lg z-10">
+                    3
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                      Cargas tus Cosas
+                    </h3>
+                    <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                      Tienes 24 horas para organizar y cargar. Si necesitas grúa externa,
+                      costo aproximado $2,500.
+                    </p>
+                    <p className="text-xs sm:text-sm text-slate-500 font-medium mb-1">
+                      ⏱️ 1 día
+                    </p>
+                    <p className="text-xs text-amber-700 bg-amber-50 inline-block px-2 py-1 rounded">
+                      💡 Carga/descarga es tu responsabilidad
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 4: Almacenas */}
+                <div className="relative flex gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                  flex items-center justify-center text-white font-bold text-lg
+                                  shadow-lg z-10">
+                    4
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                      Almacenas el Tiempo que Necesites
+                    </h3>
+                    <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                      Pago mensual desde $3K. Descuentos automáticos si contratas 6+ meses (10-25%).
+                      Bodega SMI o tu terreno, tú decides.
+                    </p>
+                    <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                      ⏱️ Flexible (1 mes mínimo)
+                    </p>
+                  </div>
+                </div>
+
+                {/* Step 5: Retiramos */}
+                <div className="relative flex gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                  flex items-center justify-center text-white font-bold text-lg
+                                  shadow-lg z-10">
+                    5
+                  </div>
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                      Retiramos Cuando Termines
+                    </h3>
+                    <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                      Aviso con 15 días de anticipación. Recogemos contenedor sin costo en Hermosillo.
+                      Depósito devuelto si está en buen estado.
+                    </p>
+                    <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                      ⏱️ 1 día
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Nota sobre compra */}
+            <div className="mt-10 bg-slate-50 border-l-4 border-[#D32F2F] p-4 sm:p-6 rounded-r-lg">
+              <div className="flex gap-3">
+                <span className="text-2xl">ℹ️</span>
+                <div>
+                  <p className="text-sm sm:text-base text-slate-700 font-medium mb-1">
+                    ¿Prefieres comprarlo?
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-600 mb-3">
+                    También vendemos contenedores. Es tuyo para siempre, lo modificas como quieras.
+                    Desde $55K.
+                  </p>
+                  <a
+                    href="#precios-compra"
+                    className="text-sm font-semibold text-[#D32F2F] hover:text-[#B71C1C]
+                               inline-flex items-center gap-1"
+                  >
+                    Ver precios de compra
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="text-center mt-10">
+              <a
+                href="#formulario"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector('section')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C] text-white
+                           px-8 py-3 sm:px-10 sm:py-4 rounded-lg font-semibold text-base sm:text-lg
+                           transition-colors duration-200 shadow-lg hover:shadow-xl"
+              >
+                Cotizar Ahora →
+              </a>
+            </div>
+
+          </div>
+        </section>
+
         {/* SECCIÓN FAQ */}
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
