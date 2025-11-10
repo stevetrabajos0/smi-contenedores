@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import toast, { Toaster } from 'react-hot-toast';
+import { Calendar, Home, Truck } from 'lucide-react';
 import ContactFields from '@/components/forms/shared/ContactFields';
 import LocationSection from '@/components/sections/LocationSection';
 import { getWhatsAppLink, WHATSAPP_MESSAGES } from '@/lib/constants';
@@ -1331,12 +1332,10 @@ export default function AlmacenamientoPage() {
 
                 {/* Icon */}
                 <div className="w-16 h-16 bg-[#D32F2F] bg-opacity-10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#D32F2F] transition-colors">
-                  <svg className="w-8 h-8 stroke-smi-red group-hover:stroke-white transition-colors" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                  </svg>
+                  <Calendar
+                    className="w-8 h-8 text-[#D32F2F] group-hover:text-white transition-colors"
+                    strokeWidth={2}
+                  />
                 </div>
 
                 {/* Title */}
@@ -1429,10 +1428,10 @@ export default function AlmacenamientoPage() {
 
                 {/* Icon */}
                 <div className="w-16 h-16 bg-[#D32F2F] bg-opacity-10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#D32F2F] transition-colors">
-                  <svg className="w-8 h-8 stroke-smi-red group-hover:stroke-white transition-colors" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                  </svg>
+                  <Home
+                    className="w-8 h-8 text-[#D32F2F] group-hover:text-white transition-colors"
+                    strokeWidth={2}
+                  />
                 </div>
 
                 {/* Title */}
@@ -1525,12 +1524,10 @@ export default function AlmacenamientoPage() {
 
                 {/* Icon */}
                 <div className="w-16 h-16 bg-[#D32F2F] bg-opacity-10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#D32F2F] transition-colors">
-                  <svg className="w-8 h-8 stroke-smi-red group-hover:stroke-white transition-colors" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                    <rect x="1" y="3" width="15" height="13"></rect>
-                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
-                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
-                  </svg>
+                  <Truck
+                    className="w-8 h-8 text-[#D32F2F] group-hover:text-white transition-colors"
+                    strokeWidth={2}
+                  />
                 </div>
 
                 {/* Title */}
