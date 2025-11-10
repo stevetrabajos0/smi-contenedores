@@ -13,245 +13,139 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
 
-      {/* HERO SECTION - FULL SCREEN CON BACKGROUND */}
-      <section className="relative min-h-[90vh] lg:min-h-screen flex items-center overflow-hidden">
+      {/* HERO SECTION - MOBILE-FIRST CLARITY */}
+      <section className="relative bg-white py-12 sm:py-16 lg:py-20 min-h-[85vh] sm:min-h-[60vh] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
 
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/hero-smi-contenedor.webp"
-            alt="Contenedores y servicios SMI en Hermosillo, Sonora"
-            fill
-            priority
-            quality={90}
-            className="object-cover"
-          />
-        </div>
-
-        {/* Content sobrepuesto */}
-        <div className="relative z-10 w-full">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div className="max-w-4xl mx-auto text-center">
-
-              {/* Marco oscuro para contenido */}
-              <div className="bg-black/75 px-8 sm:px-12 py-12 sm:py-16 rounded-2xl backdrop-blur-sm">
-
-                {/* Badge */}
-                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-8">
-                <span className="w-2 h-2 bg-green-400 rounded-full" />
-                <span className="text-sm font-medium text-white">
-                  Casas y Negocios en Hermosillo
-                </span>
-              </div>
-
-                {/* H1 */}
-                <h1 className="text-[38px] sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-tight mb-6">
-                  Contenedores en Hermosillo: Almacenamiento, Viviendas y Proyectos Únicos
-                </h1>
-
-                {/* Subheading */}
-                <p className="text-xl sm:text-2xl text-white/90 mb-10 leading-relaxed max-w-3xl mx-auto">
-                  Con contenedores de 20 y 40 pies, creamos estructuras únicas, funcionales y modernas. Entregas en todo México desde Hermosillo.
-                </p>
-
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <a
-                  href="#servicios"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById('servicios')?.scrollIntoView({
-                      behavior: 'smooth'
-                    });
-                  }}
-                  className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-10 py-5 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl cursor-pointer"
-                >
-                  Ver Opciones y Precios
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
-
-                <a
-                  href={getWhatsAppLink(WHATSAPP_MESSAGES.general)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/10 backdrop-blur-sm hover:bg-white/20 border-2 border-white/30 hover:border-white/50 text-white px-10 py-5 rounded-lg font-semibold text-lg transition-all inline-flex items-center justify-center"
-                >
-                  Hablar por WhatsApp
-                </a>
-              </div>
-
-                {/* Small text */}
-                <p className="text-sm text-white/70">
-                  Renta desde $3,000/mes | Compra desde $55,000 | Modelos listos desde $130,000
-                </p>
-
-              </div>
-              {/* Fin marco oscuro */}
-
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      {/* SECCIÓN DE SERVICIOS */}
-      <section id="servicios" className="bg-white py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-              ¿Qué necesitas resolver?
-            </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Cada solución tiene su momento ideal - encuentra la tuya
-            </p>
+          {/* Trust badge */}
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+            <span className="text-sm text-slate-600 font-medium">
+              Casas y Negocios en Hermosillo
+            </span>
           </div>
 
-          {/* Grid de 3 cards */}
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* Main headline - SHORT & CLEAR */}
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 text-center mb-4 tracking-tight">
+            Oficinas, Almacenamiento<br className="hidden sm:block" /> y Proyectos
+          </h1>
 
-            {/* CARD 1: MODELOS ESTÁNDAR */}
+          {/* Subheadline - CONCISE */}
+          <p className="text-base sm:text-lg text-slate-600 text-center mb-10 sm:mb-12 max-w-2xl mx-auto">
+            Contenedores de 10, 20 y 40 pies adaptados a tu negocio. Entregas en todo Sonora desde Hermosillo.
+          </p>
+
+          {/* 3 SERVICE CARDS - INTEGRATED IN HERO */}
+          <div id="servicios" className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto mb-8">
+
+            {/* Card 1: Oficinas y Casas Listas */}
             <Link
               href="/cotizar/modelo-estandar"
-              className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F] rounded-2xl p-8 transition-all hover:shadow-lg"
+              className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F]
+                         rounded-xl p-6 transition-all duration-200 hover:shadow-lg"
             >
-              <div className="relative h-48 w-full rounded-t-2xl overflow-hidden mb-6">
-                <Image
-                  src="/images/modelo_basico.webp"
-                  alt="Oficina modular lista para usar en Hermosillo"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                Oficinas y Casas Listas
+              <div className="text-4xl mb-3">🏢</div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                Oficinas Listas
               </h3>
-
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Espacios equipados listos para usar en semanas. Modelos pre-diseñados para oficinas, casas o bodegas.
+              <p className="text-sm text-slate-600 mb-3">
+                Espacios equipados en 4-8 semanas
               </p>
-
-              <ul className="space-y-2 mb-8">
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
-                  Desde $130,000 MXN
-                </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
-                  Modelos pre-diseñados
-                </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
-                  Entrega en 4-8 semanas
-                </li>
-              </ul>
-
-              <div className="flex items-center text-[#D32F2F] font-semibold group-hover:gap-2 transition-all">
-                Ver Modelos
-                <svg className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+              <p className="text-2xl font-bold text-[#D32F2F] mb-1">
+                Desde $130K
+              </p>
+              <p className="text-xs text-slate-500 mb-4">
+                10, 20 o 40 pies
+              </p>
+              <div className="text-sm text-[#D32F2F] group-hover:underline font-medium">
+                Ver modelos →
               </div>
             </Link>
 
-            {/* CARD 2: ALMACENAMIENTO Y MUDANZA */}
+            {/* Card 2: Almacenamiento */}
             <Link
               href="/almacenamiento"
-              className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F] rounded-2xl p-8 transition-all hover:shadow-lg"
+              className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F]
+                         rounded-xl p-6 transition-all duration-200 hover:shadow-lg"
             >
-              <div className="relative h-48 w-full rounded-t-2xl overflow-hidden mb-6">
-                <Image
-                  src="/images/almacenamiento.webp"
-                  alt="Contenedores de almacenamiento en Hermosillo"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                Almacenamiento y Mudanza
+              <div className="text-4xl mb-3">📦</div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                Almacenamiento
               </h3>
-
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Renta contenedores por el tiempo que necesites. Perfecto para almacenar o mudarte sin complicaciones.
+              <p className="text-sm text-slate-600 mb-3">
+                Renta o compra, entrega 24-48h
               </p>
-
-              <ul className="space-y-2 mb-8">
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
-                  Desde $3,000/mes renta
-                </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
-                  Contenedores 10, 20, 40 pies
-                </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
-                  Entrega en 24-48 horas
-                </li>
-              </ul>
-
-              <div className="flex items-center text-[#D32F2F] font-semibold group-hover:gap-2 transition-all">
-                Cotizar Storage
-                <svg className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+              <p className="text-2xl font-bold text-[#D32F2F] mb-1">
+                Desde $3K/mes
+              </p>
+              <p className="text-xs text-slate-500 mb-4">
+                O desde $55K compra
+              </p>
+              <div className="text-sm text-[#D32F2F] group-hover:underline font-medium">
+                Cotizar storage →
               </div>
             </Link>
 
-            {/* CARD 3: PROYECTOS PERSONALIZADOS */}
+            {/* Card 3: Proyectos Personalizados */}
             <Link
               href="/cotizar/personalizado"
-              className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F] rounded-2xl p-8 transition-all hover:shadow-lg"
+              className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F]
+                         rounded-xl p-6 transition-all duration-200 hover:shadow-lg"
             >
-              <div className="relative h-48 w-full rounded-t-2xl overflow-hidden mb-6">
-                <Image
-                  src="/images/custom.webp"
-                  alt="Proyectos personalizados con contenedores"
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                Proyectos a tu Medida
+              <div className="text-4xl mb-3">🏗️</div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                A Tu Medida
               </h3>
-
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Casas únicas, oficinas corporativas y locales comerciales diseñados específicamente para ti.
+              <p className="text-sm text-slate-600 mb-3">
+                Gyms, restaurantes, locales
               </p>
-
-              <ul className="space-y-2 mb-8">
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
-                  100% personalizado
-                </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
-                  Arquitectos especializados
-                </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
-                  Entrega 2-6 meses
-                </li>
-              </ul>
-
-              <div className="flex items-center text-[#D32F2F] font-semibold group-hover:gap-2 transition-all">
-                Cotizar Proyecto
-                <svg className="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+              <p className="text-2xl font-bold text-[#D32F2F] mb-1">
+                A cotizar
+              </p>
+              <p className="text-xs text-slate-500 mb-4">
+                100% personalizado
+              </p>
+              <div className="text-sm text-[#D32F2F] group-hover:underline font-medium">
+                Diseñar proyecto →
               </div>
             </Link>
 
           </div>
+
+          {/* Secondary CTAs - SMALLER */}
+          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+
+            {/* WhatsApp CTA */}
+            <a
+              href={getWhatsAppLink(WHATSAPP_MESSAGES.general)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700
+                         text-white px-5 py-2.5 rounded-lg text-sm font-semibold
+                         transition-colors duration-200"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Asesoría Rápida
+            </a>
+
+            {/* View all inventory link */}
+            <Link
+              href="/inventario"
+              className="text-sm text-slate-600 hover:text-[#D32F2F] underline
+                         transition-colors duration-200"
+            >
+              Ver inventario completo
+            </Link>
+
+          </div>
+
+          {/* Pricing trust line */}
+          <p className="text-center text-xs text-slate-500 mt-6">
+            Renta desde $3,000/mes | Compra desde $55,000 | Modelos listos desde $130,000
+          </p>
+
         </div>
       </section>
 
