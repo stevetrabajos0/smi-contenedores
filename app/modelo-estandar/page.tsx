@@ -85,59 +85,64 @@ export default function ModeloEstandarPage() {
 
   return (
     <main>
-      {/* HERO - ULTRA COMPACT */}
-      <section className="relative bg-white pt-6 pb-0 sm:pt-8 sm:pb-0 min-h-[18vh] sm:min-h-[22vh]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      {/* HERO - CENTERED & IMPOSING */}
+      <section className="relative bg-gradient-to-b from-slate-50 to-white py-6 sm:py-8 min-h-[22vh] sm:min-h-[20vh]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
 
           {/* Back Link */}
           <Link
             href="/"
-            className="inline-flex items-center gap-1 text-xs text-slate-600
-                       hover:text-[#D32F2F] mb-4 transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm text-slate-600
+                       hover:text-[#D32F2F] mb-6 transition-colors"
           >
-            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
             Volver
           </Link>
 
-          {/* Headline */}
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-1">
+          {/* CENTERED HERO TITLE - IMPOSING */}
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900
+                         text-center mb-2 tracking-tight">
             Oficinas y Casas Listas
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-base sm:text-lg text-slate-600 mb-4">
-            Modelos estándar desde $130K + IVA • Entrega en 2-5 semanas
+          {/* CENTERED SUBTITLE */}
+          <p className="text-lg sm:text-xl text-slate-600 text-center font-medium mb-6">
+            en 2-4 semanas
           </p>
 
-          {/* Trust Items - Inline */}
-          <div className="flex flex-wrap items-center gap-3 text-xs sm:text-sm text-slate-600">
-            <span className="flex items-center gap-1">
-              <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+          {/* CENTERED TRUST SIGNALS - COMPACT */}
+          <div className="flex flex-wrap justify-center items-center gap-4 text-sm">
+
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              3 tamaños disponibles
-            </span>
-            <span className="flex items-center gap-1">
-              <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <span className="text-slate-700">Desde $130K + IVA</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              Personalizable
-            </span>
-            <span className="flex items-center gap-1">
-              <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <span className="text-slate-700">Personalizable</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              Entrega gratis Hmo
-            </span>
+              <span className="text-slate-700">Entrega gratis Hmo</span>
+            </div>
+
           </div>
 
         </div>
       </section>
 
       {/* Sección: Nuestros Modelos */}
-      <section id="modelos" className="pt-0 pb-8 sm:pt-0 sm:pb-12 lg:pt-2 lg:pb-16 bg-white">
+      <section id="modelos" className="pt-2 pb-8 sm:pt-4 sm:pb-12 lg:pt-6 lg:pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Header - Compact */}
