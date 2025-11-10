@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import toast, { Toaster } from 'react-hot-toast';
 import ContactFields from '@/components/forms/shared/ContactFields';
 import ContactModal from '@/components/modals/ContactModal';
@@ -551,14 +552,14 @@ export default function AlmacenamientoPage() {
 
                         {/* Botones de acción */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 border-t border-slate-200">
-                          <a
+                          <Link
                             href="/"
                             className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white
                                      px-8 py-3 rounded-lg font-semibold transition-colors
                                      inline-flex items-center justify-center"
                           >
                             Volver al Inicio
-                          </a>
+                          </Link>
                           <button
                             onClick={resetForm}
                             className="border-2 border-slate-300 hover:border-[#D32F2F]
