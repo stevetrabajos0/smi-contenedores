@@ -38,13 +38,8 @@ export default function LocationSection() {
                 />
               </div>
 
-              {/* Address and external link */}
+              {/* External link */}
               <div className="mt-4 text-center">
-                <p className="text-sm sm:text-base text-slate-600 mb-2 leading-relaxed">
-                  📍 Blvd. José Alberto Healy #1509<br />
-                  Col. La Caridad<br />
-                  Hermosillo, Sonora
-                </p>
                 <a
                   href="https://www.google.com/maps/place/SMI+Contenedores+%7C+Venta+y+Renta+de+Contenedores+y+Proyectos./@29.197044775361128,-111.00396532414285,17z"
                   target="_blank"
@@ -75,8 +70,9 @@ export default function LocationSection() {
                   <div>
                     <p className="font-semibold text-slate-900">Dirección</p>
                     <p className="text-slate-600 text-sm">
-                      Parque Industrial XYZ, Calle 123<br/>
-                      Hermosillo, Sonora 83000
+                      Blvd. José Alberto Healy #1509<br/>
+                      Col. La Caridad<br/>
+                      Hermosillo, Sonora
                     </p>
                   </div>
                 </div>
