@@ -1715,14 +1715,10 @@ export default function AlmacenamientoPage() {
                       Cargas tus Cosas
                     </h3>
                     <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
-                      Tienes 24 horas para organizar y cargar. Si necesitas grúa externa,
-                      costo aproximado $2,500.
+                      Tienes 24 horas para organizar y cargar.
                     </p>
-                    <p className="text-xs sm:text-sm text-slate-500 font-medium mb-1">
+                    <p className="text-xs sm:text-sm text-slate-500 font-medium">
                       ⏱️ 1 día
-                    </p>
-                    <p className="text-xs text-amber-700 bg-amber-50 inline-block px-2 py-1 rounded">
-                      💡 Carga/descarga es tu responsabilidad
                     </p>
                   </div>
                 </div>
@@ -1739,7 +1735,7 @@ export default function AlmacenamientoPage() {
                       Almacenas el Tiempo que Necesites
                     </h3>
                     <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
-                      Pago mensual desde $3K. Descuentos automáticos si contratas 6+ meses (10-25%).
+                      Pago mensual desde $3K. Descuentos automáticos si contratas 6+ meses (10%).
                       Bodega SMI o tu terreno, tú decides.
                     </p>
                     <p className="text-xs sm:text-sm text-slate-500 font-medium">
@@ -1780,20 +1776,10 @@ export default function AlmacenamientoPage() {
                   <p className="text-sm sm:text-base text-slate-700 font-medium mb-1">
                     ¿Prefieres comprarlo?
                   </p>
-                  <p className="text-xs sm:text-sm text-slate-600 mb-3">
+                  <p className="text-xs sm:text-sm text-slate-600">
                     También vendemos contenedores. Es tuyo para siempre, lo modificas como quieras.
                     Desde $55K.
                   </p>
-                  <a
-                    href="#precios-compra"
-                    className="text-sm font-semibold text-[#D32F2F] hover:text-[#B71C1C]
-                               inline-flex items-center gap-1"
-                  >
-                    Ver precios de compra
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </a>
                 </div>
               </div>
             </div>
