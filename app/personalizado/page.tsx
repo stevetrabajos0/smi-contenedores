@@ -514,6 +514,188 @@ export default function PersonalizadoLandingPage() {
         </div>
       </section>
 
+      {/* CÓMO FUNCIONA EL SERVICIO */}
+      <section className="bg-slate-50 py-12 sm:py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+
+          {/* Header */}
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+              Cómo Funciona el Servicio
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600">
+              Proceso completo para proyectos personalizados
+            </p>
+          </div>
+
+          {/* Timeline */}
+          <div className="relative">
+
+            {/* Vertical line (desktop only) */}
+            <div className="hidden sm:block absolute left-6 top-8 bottom-8 w-0.5 bg-slate-200"></div>
+
+            <div className="space-y-8">
+
+              {/* Step 1: Consulta Inicial */}
+              <div className="relative flex gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                flex items-center justify-center text-white font-bold text-lg
+                                shadow-lg z-10">
+                  1
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                    Consulta Inicial
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                    Platicamos tu visión por llamada o en persona. Te educamos sobre opciones,
+                    requisitos de terreno y viabilidad del proyecto. Tú evalúas si tu terreno es apto.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                    ⏱️ 30-60 minutos
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 2: Diseño y Cotización */}
+              <div className="relative flex gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                flex items-center justify-center text-white font-bold text-lg
+                                shadow-lg z-10">
+                  2
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                    Diseño y Cotización
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                    Creamos renders 3D, planos arquitectónicos y presupuesto detallado según
+                    tu proyecto específico. Todo diseñado a tu medida.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                    ⏱️ 1-2 semanas
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3: Ajustes y Aprobación */}
+              <div className="relative flex gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                flex items-center justify-center text-white font-bold text-lg
+                                shadow-lg z-10">
+                  3
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                    Ajustes y Aprobación
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                    1-2 rondas de cambios incluidas. Finalizamos diseño, materiales,
+                    acabados y presupuesto definitivo.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                    ⏱️ 3-5 días
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 4: Anticipo e Inicio */}
+              <div className="relative flex gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                flex items-center justify-center text-white font-bold text-lg
+                                shadow-lg z-10">
+                  4
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                    Anticipo e Inicio
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                    40-50% de anticipo para comprar materiales y reservar producción.
+                    Resto se paga en avances de construcción según cronograma.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                    ⏱️ Mismo día
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 5: Construcción por Etapas */}
+              <div className="relative flex gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                flex items-center justify-center text-white font-bold text-lg
+                                shadow-lg z-10">
+                  5
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                    Construcción por Etapas
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                    Fabricación en nuestro taller. Te enviamos fotos del progreso cada semana.
+                    Pagos según avances pactados en cronograma.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                    ⏱️ 8-16 semanas según proyecto
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 6: Entrega e Instalación */}
+              <div className="relative flex gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                flex items-center justify-center text-white font-bold text-lg
+                                shadow-lg z-10">
+                  6
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                    Entrega e Instalación Final
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                    Transporte e instalación completa en tu ubicación. Pago final al recibir.
+                    Listo para usar desde día uno.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                    ⏱️ 1-2 días
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Nota importante */}
+          <div className="mt-10 bg-white border-l-4 border-slate-400 p-4 sm:p-6 rounded-r-lg">
+            <div className="flex gap-3">
+              <span className="text-2xl">ℹ️</span>
+              <div>
+                <p className="text-sm sm:text-base text-slate-700 font-medium mb-1">
+                  Importante
+                </p>
+                <p className="text-xs sm:text-sm text-slate-600">
+                  Cliente debe contar con terreno disponible, permisos municipales tramitados
+                  y servicios básicos (luz, agua, drenaje) accesibles.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mt-10">
+            <a
+              href="/cotizar/personalizado"
+              className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C] text-white
+                         px-8 py-3 sm:px-10 sm:py-4 rounded-lg font-semibold text-base sm:text-lg
+                         transition-colors duration-200 shadow-lg hover:shadow-xl"
+            >
+              Cotizar Mi Proyecto →
+            </a>
+          </div>
+
+        </div>
+      </section>
+
       {/* SECCIÓN FAQ - Preguntas Frecuentes */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
