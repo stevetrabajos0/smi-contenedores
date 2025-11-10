@@ -482,7 +482,7 @@ export default function ModeloPage({ params }: { params: Promise<{ slug: string 
               {modelo.slug === '20-pies' ? (
                 <div className="mb-12">
                   <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">
-                    Preguntas Frecuentes - Modelo 20'
+                    Preguntas Frecuentes - Modelo 20&apos;
                   </h3>
 
                   <div className="space-y-4 max-w-4xl mx-auto">
@@ -537,7 +537,7 @@ export default function ModeloPage({ params }: { params: Promise<{ slug: string 
                     {/* FAQ 5 */}
                     <div className="bg-white border-2 border-slate-200 rounded-xl p-6">
                       <h4 className="text-lg font-semibold text-slate-900 mb-3">
-                        ¿Cuánto espacio necesito en mi terreno para el modelo 20'?
+                        ¿Cuánto espacio necesito en mi terreno para el modelo 20&apos;?
                       </h4>
                       <p className="text-slate-600 text-sm">
                         Mínimo 7m × 3m (largo × ancho) para el contenedor, más espacio alrededor para instalación y mantenimiento.
@@ -550,7 +550,7 @@ export default function ModeloPage({ params }: { params: Promise<{ slug: string 
               ) : modelo.slug === '10-pies' ? (
                 <div className="mb-12">
                   <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">
-                    Preguntas Frecuentes - Modelo 10'
+                    Preguntas Frecuentes - Modelo 10&apos;
                   </h3>
 
                   <div className="space-y-4 max-w-4xl mx-auto">
@@ -607,7 +607,7 @@ export default function ModeloPage({ params }: { params: Promise<{ slug: string 
               ) : modelo.slug === '40-pies' ? (
                 <div className="mb-12">
                   <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">
-                    Preguntas Frecuentes - Modelo 40'
+                    Preguntas Frecuentes - Modelo 40&apos;
                   </h3>
 
                   <div className="space-y-4 max-w-4xl mx-auto">
@@ -643,7 +643,7 @@ export default function ModeloPage({ params }: { params: Promise<{ slug: string 
                         ¿La entrega e instalación es más complicada por el tamaño?
                       </h4>
                       <p className="text-slate-600 text-sm">
-                        Sí requiere más logística. El modelo 40' pesa 3,800 kg (vs 2,300 kg del 20'), entonces necesitas:
+                        Sí requiere más logística. El modelo 40&apos; pesa 3,800 kg (vs 2,300 kg del 20&apos;), entonces necesitas:
                         grúa de mayor capacidad (~$3,500-4,500), camión más grande para transporte, y terreno con
                         acceso amplio (vialidad mayor a 4m de ancho). Entrega GRATIS en Hermosillo, $60/km fuera.
                         Recomendamos visita previa al sitio para verificar acceso.

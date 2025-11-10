@@ -72,7 +72,7 @@ export default function CotizarPage() {
               {/* Info adicional */}
               <div className="mb-6 pb-6 border-t border-slate-200 pt-6 space-y-2">
                 <p className="text-sm text-slate-600">
-                  <span className="font-semibold text-slate-900">Disponibilidad:</span> Contenedores 10', 20' y 40'
+                  <span className="font-semibold text-slate-900">Disponibilidad:</span> Contenedores 10&apos;, 20&apos; y 40&apos;
                 </p>
                 <p className="text-sm text-slate-600">
                   <span className="font-semibold text-slate-900">Entrega:</span> 24-48 horas en Hermosillo
@@ -114,7 +114,7 @@ export default function CotizarPage() {
                   <svg className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
                   </svg>
-                  <span>3 tamaños: 10' ($130K), 20' ($230K), 40' ($330K)</span>
+                  <span>3 tamaños: 10&apos; ($130K), 20&apos; ($230K), 40&apos; ($330K)</span>
                 </li>
                 <li className="flex items-start gap-2 text-sm text-slate-700">
                   <svg className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
