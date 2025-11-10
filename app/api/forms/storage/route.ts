@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { storageSchema } from '@/lib/validations/form-schemas';
+import { ZodError } from 'zod';
 import { getLeadService } from '@/lib/application/container';
 import { logger } from '@/lib/utils';
 import {
@@ -28,9 +29,13 @@ export async function POST(request: Request) {
       const t2 = Date.now();
       logger.log('⏱️ [API STORAGE] Validación Zod en:', (t2 - t1), 'ms');
       logger.log('✅ Validación exitosa');
-    } catch (error: any) {
+    } catch (error) {
       logger.error('❌ ERROR DE VALIDACIÓN STORAGE:');
-      logger.error(JSON.stringify(error.issues || error, null, 2));
+      if (error instanceof ZodError) {
+        logger.error(JSON.stringify(error.issues, null, 2));
+      } else {
+        logger.error(JSON.stringify(error, null, 2));
+      }
       throw error;
     }
 
