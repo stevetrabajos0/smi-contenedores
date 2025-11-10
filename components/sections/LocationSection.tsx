@@ -24,18 +24,38 @@ export default function LocationSection() {
           {/* COLUMNA IZQUIERDA - Mapa + Info */}
           <div className="space-y-6">
 
-            {/* Google Maps Embed */}
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden
-                            border-2 border-slate-200 shadow-lg">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3470.123!2d-110.9553!3d29.0892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDA1JzIxLjEiTiAxMTDCsDU3JzE5LjEiVw!5e0!3m2!1ses!2smx!4v1234567890"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+            {/* Google Maps - Responsive */}
+            <div>
+              {/* Map container with 16:10 aspect ratio */}
+              <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden shadow-lg border-2 border-slate-200">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3482.9008873712587!2d-111.00396532414285!3d29.197044775361128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce7f606b75d531%3A0x2b68194c901d3884!2sSMI%20Contenedores%20%7C%20Venta%20y%20Renta%20de%20Contenedores%20y%20Proyectos.!5e0!3m2!1ses!2smx!4v1762761658105!5m2!1ses!2smx"
+                  className="absolute inset-0 w-full h-full"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Ubicación SMI Contenedores en Hermosillo, Sonora"
+                />
+              </div>
+
+              {/* Address and external link */}
+              <div className="mt-4 text-center">
+                <p className="text-sm sm:text-base text-slate-600 mb-2">
+                  📍 Hermosillo, Sonora, México
+                </p>
+                <a
+                  href="https://www.google.com/maps/place/SMI+Contenedores+%7C+Venta+y+Renta+de+Contenedores+y+Proyectos./@29.197044775361128,-111.00396532414285,17z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-[#D32F2F] hover:text-[#B71C1C] inline-flex items-center gap-1 transition-colors"
+                >
+                  Abrir en Google Maps
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
             </div>
 
             {/* Info Card */}
