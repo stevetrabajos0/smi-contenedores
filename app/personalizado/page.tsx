@@ -642,7 +642,7 @@ export default function PersonalizadoLandingPage() {
             <a
               href="/cotizar/personalizado"
               className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C] text-white
-                         px-8 py-3 sm:px-10 sm:py-4 rounded-lg font-semibold text-base sm:text-lg
+                         px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-semibold text-base sm:text-lg
                          transition-colors duration-200 shadow-lg hover:shadow-xl"
             >
               Cotizar Mi Proyecto →

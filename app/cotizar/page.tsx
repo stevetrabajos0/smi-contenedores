@@ -82,7 +82,7 @@ export default function CotizarPage() {
               {/* CTA */}
               <Link
                 href="/cotizar/almacenamiento"
-                className="block w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white text-center py-4 rounded-lg font-semibold transition-colors"
+                className="block w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white text-center px-6 py-3 sm:px-8 sm:py-3.5 text-base sm:text-lg rounded-lg font-semibold transition-colors"
               >
                 Cotizar Almacenamiento
               </Link>
@@ -143,7 +143,7 @@ export default function CotizarPage() {
               {/* CTA */}
               <Link
                 href="/cotizar/modelo-estandar"
-                className="block w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white text-center py-4 rounded-lg font-semibold transition-colors"
+                className="block w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white text-center px-6 py-3 sm:px-8 sm:py-3.5 text-base sm:text-lg rounded-lg font-semibold transition-colors"
               >
                 Cotizar Modelo Estándar
               </Link>
@@ -204,7 +204,7 @@ export default function CotizarPage() {
               {/* CTA */}
               <Link
                 href="/cotizar/personalizado"
-                className="block w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white text-center py-4 rounded-lg font-semibold transition-colors"
+                className="block w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white text-center px-6 py-3 sm:px-8 sm:py-3.5 text-base sm:text-lg rounded-lg font-semibold transition-colors"
               >
                 Cotizar Mi Proyecto
               </Link>

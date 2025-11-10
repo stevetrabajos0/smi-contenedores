@@ -1418,7 +1418,7 @@ export default function AlmacenamientoPage() {
                     }
                     formSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }}
-                  className="w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white py-3 rounded-lg font-semibold transition-colors duration-200"
+                  className="w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-6 py-3 sm:px-8 sm:py-3.5 text-base sm:text-lg rounded-lg font-semibold transition-colors duration-200"
                 >
                   Cotizar Renta
                 </button>
@@ -1514,7 +1514,7 @@ export default function AlmacenamientoPage() {
                     }
                     formSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }}
-                  className="w-full bg-white hover:bg-slate-50 text-slate-900 border-2 border-slate-300 hover:border-[#D32F2F] py-3 rounded-lg font-semibold transition-all duration-200"
+                  className="w-full bg-white hover:bg-slate-50 text-slate-900 border-2 border-slate-300 hover:border-[#D32F2F] px-6 py-3 sm:px-8 sm:py-3.5 text-base sm:text-lg rounded-lg font-semibold transition-all duration-200"
                 >
                   Cotizar Compra
                 </button>
@@ -1608,7 +1608,7 @@ export default function AlmacenamientoPage() {
                     }
                     formSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }}
-                  className="w-full bg-white hover:bg-slate-50 text-slate-900 border-2 border-slate-300 hover:border-[#D32F2F] py-3 rounded-lg font-semibold transition-all duration-200"
+                  className="w-full bg-white hover:bg-slate-50 text-slate-900 border-2 border-slate-300 hover:border-[#D32F2F] px-6 py-3 sm:px-8 sm:py-3.5 text-base sm:text-lg rounded-lg font-semibold transition-all duration-200"
                 >
                   Cotizar Mudanza
                 </button>
@@ -1793,7 +1793,7 @@ export default function AlmacenamientoPage() {
                   document.querySelector('section')?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C] text-white
-                           px-8 py-3 sm:px-10 sm:py-4 rounded-lg font-semibold text-base sm:text-lg
+                           px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-semibold text-base sm:text-lg
                            transition-colors duration-200 shadow-lg hover:shadow-xl"
               >
                 Cotizar Ahora →

@@ -153,7 +153,7 @@ export default function ModeloPage({ params }: { params: Promise<{ slug: string 
                   <button
                     onClick={handleCotizar}
                     className="w-full bg-[#D32F2F] hover:bg-[#B71C1C] text-white
-                               px-8 py-4 rounded-lg font-semibold text-lg
+                               px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-semibold text-base sm:text-lg
                                transition-colors duration-200
                                inline-flex items-center justify-center gap-2
                                shadow-lg hover:shadow-xl"
