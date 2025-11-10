@@ -131,174 +131,134 @@ export default function PersonalizadoLandingPage() {
           </div>
 
           {/* Grid de ejemplos */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
 
             {/* Card 1 - Casas Familiares */}
-            <div className="bg-slate-50 rounded-2xl p-6 border-2 border-slate-200
+            <div className="bg-slate-50 rounded-2xl p-4 sm:p-6 border-2 border-slate-200
                           hover:border-[#D32F2F] transition-all hover:shadow-lg group">
-              <div className="mb-4">
-                <svg className="w-12 h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="mb-3 sm:mb-4">
+                <svg className="w-10 h-10 sm:w-12 sm:h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
                 Casas Familiares
               </h3>
-              <p className="text-slate-500 text-sm mb-4">
+              <p className="text-slate-500 text-xs sm:text-sm mb-3 sm:mb-4">
                 3-5 recámaras personalizadas
               </p>
 
               {/* Bullets específicos */}
-              <ul className="space-y-2 mb-6">
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+              <ul className="space-y-1.5 sm:space-y-2 mb-4 sm:mb-6">
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Layout según tu familia (3-8 personas)
                 </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Acabados y materiales a elegir
                 </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Incluye instalaciones completas
                 </li>
               </ul>
-
-              {/* Pricing box */}
-              <div className="bg-white rounded-lg p-3 mb-4 border border-slate-200">
-                <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">
-                  Rango Típico
-                </p>
-                <p className="text-lg font-bold text-slate-900">
-                  $400K - $700K
-                </p>
-              </div>
             </div>
 
             {/* Card 2 - Negocios Pequeños */}
-            <div className="bg-slate-50 rounded-2xl p-6 border-2 border-slate-200
+            <div className="bg-slate-50 rounded-2xl p-4 sm:p-6 border-2 border-slate-200
                           hover:border-[#D32F2F] transition-all hover:shadow-lg group">
-              <div className="mb-4">
-                <svg className="w-12 h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="mb-3 sm:mb-4">
+                <svg className="w-10 h-10 sm:w-12 sm:h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">
-                Negocios Pequeños
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                Negocios
               </h3>
-              <p className="text-slate-500 text-sm mb-4">
+              <p className="text-slate-500 text-xs sm:text-sm mb-3 sm:mb-4">
                 Restaurantes, cafés, retail
               </p>
 
               {/* Bullets específicos */}
-              <ul className="space-y-2 mb-6">
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+              <ul className="space-y-1.5 sm:space-y-2 mb-4 sm:mb-6">
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Diseño comercial funcional
                 </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Área de servicio y almacén
                 </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Instalaciones profesionales
                 </li>
               </ul>
-
-              {/* Pricing box */}
-              <div className="bg-white rounded-lg p-3 mb-4 border border-slate-200">
-                <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">
-                  Rango Típico
-                </p>
-                <p className="text-lg font-bold text-slate-900">
-                  $200K - $400K
-                </p>
-              </div>
             </div>
 
             {/* Card 3 - Oficinas */}
-            <div className="bg-slate-50 rounded-2xl p-6 border-2 border-slate-200
+            <div className="bg-slate-50 rounded-2xl p-4 sm:p-6 border-2 border-slate-200
                           hover:border-[#D32F2F] transition-all hover:shadow-lg group">
-              <div className="mb-4">
-                <svg className="w-12 h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="mb-3 sm:mb-4">
+                <svg className="w-10 h-10 sm:w-12 sm:h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
                 Oficinas
               </h3>
-              <p className="text-slate-500 text-sm mb-4">
+              <p className="text-slate-500 text-xs sm:text-sm mb-3 sm:mb-4">
                 Espacios de trabajo 5-15 personas
               </p>
 
               {/* Bullets específicos */}
-              <ul className="space-y-2 mb-6">
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+              <ul className="space-y-1.5 sm:space-y-2 mb-4 sm:mb-6">
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Diseño modular y escalable
                 </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Áreas privadas y open space
                 </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Infraestructura tech-ready
                 </li>
               </ul>
-
-              {/* Pricing box */}
-              <div className="bg-white rounded-lg p-3 mb-4 border border-slate-200">
-                <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">
-                  Rango Típico
-                </p>
-                <p className="text-lg font-bold text-slate-900">
-                  $300K - $600K
-                </p>
-              </div>
             </div>
 
             {/* Card 4 - Proyectos Industriales */}
-            <div className="bg-slate-50 rounded-2xl p-6 border-2 border-slate-200
+            <div className="bg-slate-50 rounded-2xl p-4 sm:p-6 border-2 border-slate-200
                           hover:border-[#D32F2F] transition-all hover:shadow-lg group">
-              <div className="mb-4">
-                <svg className="w-12 h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="mb-3 sm:mb-4">
+                <svg className="w-10 h-10 sm:w-12 sm:h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
                 Proyectos Industriales
               </h3>
-              <p className="text-slate-500 text-sm mb-4">
+              <p className="text-slate-500 text-xs sm:text-sm mb-3 sm:mb-4">
                 Talleres, bodegas, almacenes
               </p>
 
               {/* Bullets específicos */}
-              <ul className="space-y-2 mb-6">
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+              <ul className="space-y-1.5 sm:space-y-2 mb-4 sm:mb-6">
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Resistencia para uso industrial
                 </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Espacios amplios y flexibles
                 </li>
-                <li className="text-sm text-slate-600 flex items-start gap-2">
-                  <span className="text-[#D32F2F] mt-1">•</span>
+                <li className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                  <span className="text-[#D32F2F] mt-0.5">•</span>
                   Cumplimiento normativo
                 </li>
               </ul>
-
-              {/* Pricing box */}
-              <div className="bg-white rounded-lg p-3 mb-4 border border-slate-200">
-                <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">
-                  Rango Típico
-                </p>
-                <p className="text-lg font-bold text-slate-900">
-                  $150K - $500K
-                </p>
-              </div>
             </div>
 
           </div>
@@ -307,7 +267,7 @@ export default function PersonalizadoLandingPage() {
           <div className="mt-12 text-center">
             <Link
               href="/cotizar/personalizado"
-              className="inline-flex items-center gap-3 bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-10 py-5 rounded-lg font-bold text-xl transition-colors shadow-xl hover:shadow-2xl"
+              className="inline-flex items-center gap-3 bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-6 py-3 sm:px-8 sm:py-3.5 rounded-lg font-semibold text-base sm:text-lg transition-colors shadow-xl hover:shadow-2xl"
             >
               Cotizar Mi Proyecto
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
