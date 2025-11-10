@@ -405,6 +405,171 @@ export default function ModeloEstandarPage() {
         </div>
       </section>
 
+      {/* CÓMO FUNCIONA EL SERVICIO */}
+      <section className="bg-slate-50 py-12 sm:py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+
+          {/* Header */}
+          <div className="text-center mb-10 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+              Cómo Funciona el Servicio
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600">
+              De la cotización a tu oficina lista en 2-4 semanas
+            </p>
+          </div>
+
+          {/* Timeline */}
+          <div className="relative">
+
+            {/* Vertical line (desktop only) */}
+            <div className="hidden sm:block absolute left-6 top-8 bottom-8 w-0.5 bg-slate-200"></div>
+
+            <div className="space-y-8">
+
+              {/* Step 1: Selecciona tu Modelo */}
+              <div className="relative flex gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                flex items-center justify-center text-white font-bold text-lg
+                                shadow-lg z-10">
+                  1
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                    Selecciona tu Modelo
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                    Elige entre 10, 20 o 40 pies según el espacio que necesitas y número de personas.
+                    Cada tamaño incluye base completa: estructura, eléctrica, clima, ventanas.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                    ⏱️ 5 minutos
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 2: Agrega Extras */}
+              <div className="relative flex gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                flex items-center justify-center text-white font-bold text-lg
+                                shadow-lg z-10">
+                  2
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                    Agrega Extras Opcionales
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                    Decide si incluyes baño (simple $15K o completo $30K) y/o cocina equipada ($13K).
+                    En el formulario puedes describir necesidades específicas para tu proyecto.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                    ⏱️ 5 minutos
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3: Confirma con Anticipo */}
+              <div className="relative flex gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                flex items-center justify-center text-white font-bold text-lg
+                                shadow-lg z-10">
+                  3
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                    Confirma con Anticipo
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                    50% de anticipo para comprar materiales e iniciar construcción.
+                    Precio final incluye IVA, sin sorpresas.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                    ⏱️ Mismo día
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 4: Construimos tu Espacio */}
+              <div className="relative flex gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                flex items-center justify-center text-white font-bold text-lg
+                                shadow-lg z-10">
+                  4
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                    Construimos tu Espacio
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                    Fabricación en nuestro taller. Te enviamos fotos del progreso cada semana.
+                    2-3 semanas (10'), 3-4 semanas (20'), 4-5 semanas (40').
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                    ⏱️ 2-4 semanas según modelo
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 5: Entregamos e Instalamos */}
+              <div className="relative flex gap-4 sm:gap-6">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#D32F2F] rounded-full
+                                flex items-center justify-center text-white font-bold text-lg
+                                shadow-lg z-10">
+                  5
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+                    Entregamos e Instalamos
+                  </h3>
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-2">
+                    Transporte gratis en Hermosillo (fuera $60/km). Instalación en tu ubicación.
+                    Pagas 50% restante al recibir.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                    ⏱️ 1 día
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Nota importante */}
+          <div className="mt-10 bg-white border-l-4 border-slate-400 p-4 sm:p-6 rounded-r-lg">
+            <div className="flex gap-3">
+              <span className="text-2xl">ℹ️</span>
+              <div>
+                <p className="text-sm sm:text-base text-slate-700 font-medium mb-1">
+                  Importante
+                </p>
+                <p className="text-xs sm:text-sm text-slate-600">
+                  Cliente prepara terreno (nivelación, base de concreto), tramita permisos
+                  municipales y contrata conexión de servicios (luz, agua, drenaje).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mt-10">
+            <a
+              href="#modelos"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector('#modelos')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}
+              className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C] text-white
+                         px-8 py-3 sm:px-10 sm:py-4 rounded-lg font-semibold text-base sm:text-lg
+                         transition-colors duration-200 shadow-lg hover:shadow-xl"
+            >
+              Ver Detalles y Cotizar →
+            </a>
+          </div>
+
+        </div>
+      </section>
+
       {/* SECCIÓN FAQ - Preguntas Frecuentes */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
