@@ -86,7 +86,7 @@ export default function ModeloEstandarPage() {
   return (
     <main>
       {/* HERO - ULTRA COMPACT */}
-      <section className="relative bg-white py-6 sm:py-8 min-h-[18vh] sm:min-h-[22vh]">
+      <section className="relative bg-white pt-6 pb-0 sm:pt-8 sm:pb-0 min-h-[18vh] sm:min-h-[22vh]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
           {/* Back Link */}
@@ -137,11 +137,11 @@ export default function ModeloEstandarPage() {
       </section>
 
       {/* Sección: Nuestros Modelos */}
-      <section id="modelos" className="pt-4 pb-8 sm:pt-6 sm:pb-12 lg:pt-8 lg:pb-16 bg-white">
+      <section id="modelos" className="pt-0 pb-8 sm:pt-0 sm:pb-12 lg:pt-2 lg:pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Header - Compact */}
-          <div className="text-center mb-6 px-4 sm:px-6">
+          <div className="text-center mb-4 px-4 sm:px-6 mt-0">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900 mb-2">
               Nuestros Modelos Estándar
             </h2>
