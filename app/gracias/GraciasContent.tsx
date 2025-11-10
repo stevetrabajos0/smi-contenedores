@@ -199,19 +199,17 @@ export default function GraciasContent() {
           </div>
 
           {/* Botones de acción */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 border-t border-slate-200">
+          <div className="flex flex-col gap-4 items-center pt-4 border-t border-slate-200">
             <Link
               href="/"
-              className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white
-                       px-8 py-3 rounded-lg font-semibold transition-colors
-                       inline-flex items-center justify-center"
+              className="text-slate-600 hover:text-[#D32F2F] underline text-sm transition-colors"
             >
               Volver al Inicio
             </Link>
             <Link
               href="/cotizar"
-              className="border-2 border-slate-300 hover:border-[#D32F2F]
-                       hover:bg-slate-50 text-slate-900
+              className="w-full border-2 border-[#D32F2F] text-[#D32F2F]
+                       hover:bg-[#D32F2F] hover:text-white
                        px-8 py-3 rounded-lg font-semibold transition-colors
                        inline-flex items-center justify-center"
             >
