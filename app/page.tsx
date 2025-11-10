@@ -35,14 +35,25 @@ export default function HomePage() {
             Contenedores de 10, 20 y 40 pies adaptados a tu negocio. Entregas en todo Sonora desde Hermosillo.
           </p>
 
+          {/* Service Selection Header */}
+          <div className="text-center mb-8 sm:mb-10 mt-8 sm:mt-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+              Elige tu Servicio
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600">
+              Selecciona la opción que mejor se adapte a tu necesidad
+            </p>
+          </div>
+
           {/* 3 SERVICE CARDS - INTEGRATED IN HERO */}
           <div id="servicios" className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto mb-8">
 
             {/* Card 1: Oficinas y Casas Listas */}
             <Link
-              href="/cotizar/modelo-estandar"
+              href="/modelo-estandar"
               className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F]
-                         rounded-xl p-6 transition-all duration-200 hover:shadow-lg"
+                         rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
+                         cursor-pointer"
             >
               <div className="text-4xl mb-3">🏢</div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">
@@ -57,8 +68,12 @@ export default function HomePage() {
               <p className="text-xs text-slate-500 mb-4">
                 10, 20 o 40 pies
               </p>
-              <div className="text-sm text-[#D32F2F] group-hover:underline font-medium">
-                Ver modelos →
+              <div className="text-sm text-[#D32F2F] font-medium flex items-center justify-between">
+                <span>Conocer más</span>
+                <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </div>
             </Link>
 
@@ -66,7 +81,8 @@ export default function HomePage() {
             <Link
               href="/almacenamiento"
               className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F]
-                         rounded-xl p-6 transition-all duration-200 hover:shadow-lg"
+                         rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
+                         cursor-pointer"
             >
               <div className="text-4xl mb-3">📦</div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">
@@ -81,16 +97,21 @@ export default function HomePage() {
               <p className="text-xs text-slate-500 mb-4">
                 O desde $55K compra
               </p>
-              <div className="text-sm text-[#D32F2F] group-hover:underline font-medium">
-                Cotizar storage →
+              <div className="text-sm text-[#D32F2F] font-medium flex items-center justify-between">
+                <span>Cotizar storage</span>
+                <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </div>
             </Link>
 
             {/* Card 3: Proyectos Personalizados */}
             <Link
-              href="/cotizar/personalizado"
+              href="/personalizado"
               className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F]
-                         rounded-xl p-6 transition-all duration-200 hover:shadow-lg"
+                         rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
+                         cursor-pointer"
             >
               <div className="text-4xl mb-3">🏗️</div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">
@@ -105,8 +126,12 @@ export default function HomePage() {
               <p className="text-xs text-slate-500 mb-4">
                 100% personalizado
               </p>
-              <div className="text-sm text-[#D32F2F] group-hover:underline font-medium">
-                Diseñar proyecto →
+              <div className="text-sm text-[#D32F2F] font-medium flex items-center justify-between">
+                <span>Conocer más</span>
+                <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </div>
             </Link>
 
