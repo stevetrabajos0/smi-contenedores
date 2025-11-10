@@ -77,23 +77,23 @@ export default function HowItWorksSection() {
         </div>
 
         {/* Stack vertical - Tablet y Mobile (< lg) */}
-        <div className="lg:hidden space-y-8">
+        <div className="lg:hidden space-y-10">
           {PROCESS_STEPS.map((step) => (
             <div key={step.number}
-                 className="flex gap-6 items-start">
+                 className="flex gap-8 items-start">
 
               {/* Número */}
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 rounded-full bg-[#D32F2F]
+                <div className="w-20 h-20 rounded-full bg-[#D32F2F]
                                 flex items-center justify-center shadow-lg">
-                  <span className="text-white text-2xl font-bold">
+                  <span className="text-white text-3xl font-bold">
                     {step.number}
                   </span>
                 </div>
               </div>
 
               {/* Contenido */}
-              <div className="flex-1 pt-2">
+              <div className="flex-1 pt-3">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
                   {step.title}
                 </h3>
