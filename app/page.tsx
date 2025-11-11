@@ -27,12 +27,12 @@ export default function HomePage() {
 
           {/* Main headline - SHORT & CLEAR */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 text-center mb-4 tracking-tight">
-            Oficinas, Almacenamiento<br className="hidden sm:block" /> y Proyectos
+            Contenedores para Almacenar, Trabajar y Vivir
           </h1>
 
           {/* Subheadline - CONCISE */}
           <p className="text-base sm:text-lg text-slate-600 text-center mb-10 sm:mb-12 max-w-2xl mx-auto">
-            Contenedores de 10, 20 y 40 pies adaptados a tu negocio. Entregas en todo Sonora desde Hermosillo.
+            Renta desde $3K/mes o compra desde $55K. Oficinas y casas desde $130K, o diseña algo único. Mudanzas también. Te lo llevamos gratis en Hermosillo, a todo México con envío.
           </p>
 
           {/* Service Selection Header */}
@@ -155,21 +155,7 @@ export default function HomePage() {
               Asesoría Rápida
             </a>
 
-            {/* View all inventory link */}
-            <Link
-              href="/inventario"
-              className="text-sm text-slate-600 hover:text-[#D32F2F] underline
-                         transition-colors duration-200"
-            >
-              Ver inventario completo
-            </Link>
-
           </div>
-
-          {/* Pricing trust line */}
-          <p className="text-center text-xs text-slate-500 mt-6">
-            Renta desde $3,000/mes | Compra desde $55,000 | Modelos listos desde $130,000
-          </p>
 
         </div>
       </section>

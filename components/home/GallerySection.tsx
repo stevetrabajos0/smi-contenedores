@@ -73,14 +73,18 @@ export default function GallerySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header minimalista */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-            Qué Puedes Crear
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+            Inspiración para Tu Proyecto
           </h2>
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto text-center">
+            Casas, oficinas, locales, bodegas o lo que imagines.
+            Diseñamos y construimos según tu necesidad, más rápido que construcción tradicional.
+          </p>
         </div>
 
-        {/* Grid: 1 col mobile, 2 tablet, 3 desktop */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Grid: 2 col mobile, 3 desktop */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {GALLERY_ITEMS.map((item) => (
             <Link
               key={item.id}
