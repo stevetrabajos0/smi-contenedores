@@ -408,7 +408,7 @@ export default function AlmacenamientoPage() {
             </Link>
 
             {/* Headline - ULTRA SHORT */}
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4 text-center">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 text-center">
               Almacenamiento en Hermosillo
             </h1>
 

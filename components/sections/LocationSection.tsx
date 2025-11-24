@@ -4,12 +4,12 @@ import { getWhatsAppLink, WHATSAPP_MESSAGES, SMI_WHATSAPP_DISPLAY, SMI_WHATSAPP_
 
 export default function LocationSection() {
   return (
-    <section id="ubicacion-contacto" className="py-20 lg:py-28 bg-slate-50">
+    <section id="ubicacion-contacto" className="py-10 sm:py-16 lg:py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
             Encuéntranos en Hermosillo
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">

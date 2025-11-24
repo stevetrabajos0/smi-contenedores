@@ -122,7 +122,7 @@ export default function PersonalizadoLandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
               Proyectos que Hacemos Realidad
             </h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
@@ -137,7 +137,7 @@ export default function PersonalizadoLandingPage() {
             <div className="bg-slate-50 rounded-2xl p-4 sm:p-6 border-2 border-slate-200
                           hover:border-[#D32F2F] transition-all hover:shadow-lg group">
               <div className="mb-3 sm:mb-4">
-                <svg className="w-10 h-10 sm:w-12 sm:h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </div>
@@ -169,7 +169,7 @@ export default function PersonalizadoLandingPage() {
             <div className="bg-slate-50 rounded-2xl p-4 sm:p-6 border-2 border-slate-200
                           hover:border-[#D32F2F] transition-all hover:shadow-lg group">
               <div className="mb-3 sm:mb-4">
-                <svg className="w-10 h-10 sm:w-12 sm:h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                 </svg>
               </div>
@@ -201,7 +201,7 @@ export default function PersonalizadoLandingPage() {
             <div className="bg-slate-50 rounded-2xl p-4 sm:p-6 border-2 border-slate-200
                           hover:border-[#D32F2F] transition-all hover:shadow-lg group">
               <div className="mb-3 sm:mb-4">
-                <svg className="w-10 h-10 sm:w-12 sm:h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
@@ -233,7 +233,7 @@ export default function PersonalizadoLandingPage() {
             <div className="bg-slate-50 rounded-2xl p-4 sm:p-6 border-2 border-slate-200
                           hover:border-[#D32F2F] transition-all hover:shadow-lg group">
               <div className="mb-3 sm:mb-4">
-                <svg className="w-10 h-10 sm:w-12 sm:h-12 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 sm:w-10 sm:h-10 text-[#D32F2F]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                 </svg>
               </div>
@@ -280,12 +280,12 @@ export default function PersonalizadoLandingPage() {
       </section>
 
       {/* Galería de Inspiración */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
               Tu Proyecto Puede Lucir Así
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -653,12 +653,12 @@ export default function PersonalizadoLandingPage() {
       </section>
 
       {/* SECCIÓN FAQ - Preguntas Frecuentes */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
               Preguntas Frecuentes sobre Proyectos Personalizados
             </h2>
             <p className="text-lg text-slate-600">
@@ -673,7 +673,7 @@ export default function PersonalizadoLandingPage() {
                 {/* Button/Header */}
                 <button
                   onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
-                  className="w-full py-8 px-6 sm:px-8 flex items-center justify-between gap-6 text-left
+                  className="w-full py-6 px-6 sm:px-8 flex items-center justify-between gap-6 text-left
                              hover:bg-slate-50 transition-all duration-200 rounded-xl"
                 >
                   {/* Question */}
@@ -740,9 +740,9 @@ export default function PersonalizadoLandingPage() {
       <LocationSection />
 
       {/* CTA Final */}
-      <section className="py-20 bg-slate-900">
+      <section className="py-10 sm:py-16 lg:py-20 bg-slate-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
             ¿Tienes una idea diferente?
           </h2>
           <p className="text-xl text-slate-300 mb-8">

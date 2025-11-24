@@ -222,7 +222,7 @@ export default function ModeloEstandarPage() {
                   {/* Precio */}
                   <div className="mb-6">
                     <p className="text-sm text-slate-600 mb-1">Desde</p>
-                    <p className="text-3xl font-bold text-slate-900">
+                    <p className="text-2xl sm:text-3xl font-bold text-slate-900">
                       ${modelo.precio_desde.toLocaleString('es-MX')}
                       <span className="text-lg text-slate-600 font-normal"> + IVA</span>
                     </p>
@@ -313,7 +313,7 @@ export default function ModeloEstandarPage() {
                     {/* Precio */}
                     <div className="mb-6">
                       <p className="text-sm text-slate-600 mb-1">Desde</p>
-                      <p className="text-3xl font-bold text-slate-900">
+                      <p className="text-2xl sm:text-3xl font-bold text-slate-900">
                         ${modelo.precio_desde.toLocaleString('es-MX')}
                         <span className="text-lg text-slate-600 font-normal"> + IVA</span>
                       </p>
@@ -571,12 +571,12 @@ export default function ModeloEstandarPage() {
       </div>
 
       {/* SECCIÓN FAQ - Preguntas Frecuentes */}
-      <section className="py-20 bg-white">
+      <section className="py-10 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
               Preguntas Frecuentes
             </h2>
             <p className="text-lg text-slate-600">
@@ -591,7 +591,7 @@ export default function ModeloEstandarPage() {
                 {/* Button/Header */}
                 <button
                   onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
-                  className="w-full py-8 px-6 sm:px-8 flex items-center justify-between gap-6 text-left
+                  className="w-full py-6 px-6 sm:px-8 flex items-center justify-between gap-6 text-left
                              hover:bg-slate-50 transition-all duration-200 rounded-xl"
                 >
                   {/* Question */}

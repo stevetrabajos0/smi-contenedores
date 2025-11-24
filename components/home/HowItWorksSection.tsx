@@ -30,12 +30,12 @@ const PROCESS_STEPS: ProcessStep[] = [
 
 export default function HowItWorksSection() {
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-10 sm:py-16 lg:py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
             Cómo Funciona
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -56,7 +56,7 @@ export default function HowItWorksSection() {
               <div key={step.number} className="flex flex-col items-center">
 
                 {/* Círculo con número */}
-                <div className="w-24 h-24 rounded-full bg-[#D32F2F]
+                <div className="w-20 h-20 rounded-full bg-[#D32F2F]
                                 flex items-center justify-center
                                 shadow-xl mb-6">
                   <span className="text-white text-4xl font-bold">
@@ -86,7 +86,7 @@ export default function HowItWorksSection() {
 
               {/* Número */}
               <div>
-                <div className="w-20 h-20 rounded-full bg-[#D32F2F]
+                <div className="w-16 h-16 rounded-full bg-[#D32F2F]
                                 flex items-center justify-center shadow-lg">
                   <span className="text-white text-3xl font-bold">
                     {step.number}

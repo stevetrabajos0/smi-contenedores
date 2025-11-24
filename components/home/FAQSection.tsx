@@ -51,7 +51,7 @@ function FAQItem({ faq }: { faq: FAQ }) {
     <div className="group">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full py-8 px-6 sm:px-8 flex items-center justify-between gap-6 text-left
+        className="w-full py-6 px-6 sm:px-8 flex items-center justify-between gap-6 text-left
                    hover:bg-slate-50 transition-all duration-200 rounded-xl"
       >
         <h3 className="text-lg sm:text-xl font-semibold text-slate-900 pr-4 leading-relaxed">
@@ -91,12 +91,12 @@ function FAQItem({ faq }: { faq: FAQ }) {
 // Componente principal
 export default function FAQSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 sm:py-16 lg:py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
             Preguntas Frecuentes
           </h2>
           <p className="text-lg text-slate-600">

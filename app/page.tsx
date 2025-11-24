@@ -37,7 +37,7 @@ export default function HomePage() {
 
           {/* Service Selection Header */}
           <div className="text-center mb-8 sm:mb-10 mt-8 sm:mt-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
               Elige tu Servicio
             </h2>
             <p className="text-base sm:text-lg text-slate-600">
@@ -55,7 +55,7 @@ export default function HomePage() {
                          rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
                          cursor-pointer"
             >
-              <div className="text-4xl mb-3">🏠</div>
+              <div className="text-3xl mb-3">🏠</div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">
                 Casas y Oficinas Listas
               </h3>
@@ -84,7 +84,7 @@ export default function HomePage() {
                          rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
                          cursor-pointer"
             >
-              <div className="text-4xl mb-3">📦</div>
+              <div className="text-3xl mb-3">📦</div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">
                 Almacenamiento
               </h3>
@@ -113,7 +113,7 @@ export default function HomePage() {
                          rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
                          cursor-pointer"
             >
-              <div className="text-4xl mb-3">🏗️</div>
+              <div className="text-3xl mb-3">🏗️</div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">
                 A Tu Medida
               </h3>

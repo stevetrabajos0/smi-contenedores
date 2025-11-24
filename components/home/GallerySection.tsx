@@ -69,12 +69,12 @@ const GALLERY_ITEMS: GalleryItem[] = [
 
 export default function GallerySection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 sm:py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header minimalista */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
             Inspiración para Tu Proyecto
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto text-center">

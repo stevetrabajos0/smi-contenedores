@@ -5,9 +5,9 @@ export default function CotizarPage() {
     <main className="min-h-screen bg-slate-50">
 
       {/* Hero Section */}
-      <section className="py-16 bg-white border-b border-slate-200">
+      <section className="py-10 sm:py-12 lg:py-16 bg-white border-b border-slate-200">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
             ¿Qué Servicio Necesitas?
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
@@ -17,7 +17,7 @@ export default function CotizarPage() {
       </section>
 
       {/* Cards Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-10 sm:py-16 lg:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
