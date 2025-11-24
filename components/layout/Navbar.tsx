@@ -140,7 +140,7 @@ export default function Navbar() {
             </button>
             <Link
               href="/cotizar"
-              className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
+              className="hidden md:inline-flex bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
             >
               Cotizar
             </Link>
