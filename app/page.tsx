@@ -17,14 +17,6 @@ export default function HomePage() {
       <section className="relative bg-white py-12 sm:py-16 lg:py-20 min-h-[85vh] sm:min-h-[60vh] flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
 
-          {/* Trust badge */}
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-            <span className="text-sm text-slate-600 font-medium">
-              Casas y Negocios en Hermosillo
-            </span>
-          </div>
-
           {/* Main headline - SHORT & CLEAR */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 text-center mb-4 tracking-tight">
             Contenedores para Almacenar, Trabajar y Vivir
@@ -32,7 +24,7 @@ export default function HomePage() {
 
           {/* Subheadline - CONCISE */}
           <p className="text-base sm:text-lg text-slate-600 text-center mb-10 sm:mb-12 max-w-2xl mx-auto">
-            Renta desde $3K/mes o compra desde $55K. Oficinas y casas desde $130K, o diseña algo único. Mudanzas también. Te lo llevamos gratis en Hermosillo, a todo México con envío.
+            Entrega gratis en Hermosillo. Envíos a todo México.
           </p>
 
           {/* Service Selection Header */}
