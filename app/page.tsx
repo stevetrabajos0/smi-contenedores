@@ -46,26 +46,26 @@ export default function HomePage() {
           </div>
 
           {/* 3 SERVICE CARDS - INTEGRATED IN HERO */}
-          <div id="servicios" className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto mb-8">
+          <div id="servicios" className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 max-w-5xl mx-auto mb-8">
 
             {/* Card 1: Oficinas y Casas Listas */}
             <Link
               href="/modelo-estandar"
               className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F]
-                         rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
+                         rounded-xl p-4 sm:p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
                          cursor-pointer"
             >
-              <div className="text-3xl mb-3">🏠</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">
+              <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">🏠</div>
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
                 Casas y Oficinas Listas
               </h3>
-              <p className="text-sm text-slate-600 mb-3">
+              <p className="text-sm text-slate-600 mb-2 sm:mb-3">
                 Espacios equipados en 4-8 semanas
               </p>
-              <p className="text-2xl font-bold text-[#D32F2F] mb-1">
+              <p className="text-xl sm:text-2xl font-bold text-[#D32F2F] mb-1">
                 Desde $130K
               </p>
-              <p className="text-xs text-slate-500 mb-4">
+              <p className="text-xs text-slate-500 mb-3 sm:mb-4">
                 10, 20 o 40 pies
               </p>
               <div className="text-sm text-[#D32F2F] font-medium flex items-center justify-between">
@@ -81,20 +81,20 @@ export default function HomePage() {
             <Link
               href="/almacenamiento"
               className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F]
-                         rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
+                         rounded-xl p-4 sm:p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
                          cursor-pointer"
             >
-              <div className="text-3xl mb-3">📦</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">
+              <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📦</div>
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
                 Almacenamiento
               </h3>
-              <p className="text-sm text-slate-600 mb-3">
+              <p className="text-sm text-slate-600 mb-2 sm:mb-3">
                 Renta o compra, entrega 24-48h
               </p>
-              <p className="text-2xl font-bold text-[#D32F2F] mb-1">
+              <p className="text-xl sm:text-2xl font-bold text-[#D32F2F] mb-1">
                 Desde $3K/mes
               </p>
-              <p className="text-xs text-slate-500 mb-4">
+              <p className="text-xs text-slate-500 mb-3 sm:mb-4">
                 O desde $55K compra
               </p>
               <div className="text-sm text-[#D32F2F] font-medium flex items-center justify-between">
@@ -110,20 +110,20 @@ export default function HomePage() {
             <Link
               href="/personalizado"
               className="group bg-white border-2 border-slate-200 hover:border-[#D32F2F]
-                         rounded-xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
+                         rounded-xl p-4 sm:p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
                          cursor-pointer"
             >
-              <div className="text-3xl mb-3">🏗️</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">
+              <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">🏗️</div>
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
                 A Tu Medida
               </h3>
-              <p className="text-sm text-slate-600 mb-3">
+              <p className="text-sm text-slate-600 mb-2 sm:mb-3">
                 Diseñado específicamente para ti
               </p>
-              <p className="text-2xl font-bold text-[#D32F2F] mb-1">
+              <p className="text-xl sm:text-2xl font-bold text-[#D32F2F] mb-1">
                 A cotizar
               </p>
-              <p className="text-xs text-slate-500 mb-4">
+              <p className="text-xs text-slate-500 mb-3 sm:mb-4">
                 100% personalizado
               </p>
               <div className="text-sm text-[#D32F2F] font-medium flex items-center justify-between">

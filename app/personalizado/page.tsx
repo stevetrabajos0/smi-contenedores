@@ -2,10 +2,14 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import LocationSection from '@/components/sections/LocationSection';
+import { ImageLightbox } from '@/components/ui/ImageLightbox';
 
 export default function PersonalizadoLandingPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // FAQs específicos de Proyectos Personalizados
   const FAQS_PERSONALIZADO = [
@@ -50,6 +54,31 @@ export default function PersonalizadoLandingPage() {
       respuesta: 'Timeline por complejidad: Kiosco/Caseta simple (1 contenedor): 3-6 semanas desde anticipo hasta entrega. Casa 3 recámaras o local mediano: 8-12 semanas. Proyecto multi-contenedor complejo: 10-16 semanas.\n\nIncluye: Diseño final, fabricación, acabados, instalaciones, transporte. NO incluye: tiempo de permisos (puede agregar 2-8 semanas según municipio), preparación de terreno por tu cuenta.\n\nFactores que extienden timeline: Temporada alta (diciembre-febrero), cambios de diseño durante construcción, materiales especiales bajo pedido, ubicaciones remotas con logística compleja, clima extremo que impide trabajo.\n\n¿Puedes acelerar? Posible agregar 1-2 semanas menos con costo adicional por horas extra y priorización. Consúltanos si tienes fecha límite crítica.'
     }
   ];
+
+  // Galería de imágenes (8 imágenes - sin bodega)
+  const GALLERY_IMAGES = [
+    { src: '/gallery/home-office.webp', alt: 'Home Office' },
+    { src: '/gallery/puesto-comida.webp', alt: 'Puesto de Comida' },
+    { src: '/gallery/tiny-home.webp', alt: 'Tiny Home' },
+    { src: '/gallery/airbnb.webp', alt: 'Casa de Playa' },
+    { src: '/gallery/restaurante.webp', alt: 'Restaurante' },
+    { src: '/gallery/oficinas-corporativas.webp', alt: 'Oficinas Corporativas' },
+    { src: '/gallery/plaza.webp', alt: 'Plaza Comercial' },
+    { src: '/gallery/casa-lujo.webp', alt: 'Casa de Lujo' }
+  ];
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  const handleNavigate = (newIndex: number) => {
+    setCurrentImageIndex(newIndex);
+  };
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -293,181 +322,43 @@ export default function PersonalizadoLandingPage() {
             </p>
           </div>
 
-          {/* Grid: 1 col mobile, 2 tablet, 3 desktop - 8 imágenes (sin Bodega) */}
+          {/* Grid: 1 col mobile, 2 tablet, 3 desktop - 8 imágenes */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            {/* 1. Home Office */}
-            <Link
-              href="/cotizar/modelo-estandar"
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl
-                         bg-slate-100 transition-all duration-200
-                         hover:shadow-2xl hover:scale-[1.02]"
-            >
-              <img
-                src="/gallery/home-office.webp"
-                alt="Home Office"
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white text-xl sm:text-2xl font-bold leading-tight">
-                  Home Office
-                </h3>
-              </div>
-            </Link>
-
-            {/* 2. Puesto de Comida */}
-            <Link
-              href="/cotizar/personalizado"
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl
-                         bg-slate-100 transition-all duration-200
-                         hover:shadow-2xl hover:scale-[1.02]"
-            >
-              <img
-                src="/gallery/puesto-comida.webp"
-                alt="Puesto de Comida"
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white text-xl sm:text-2xl font-bold leading-tight">
-                  Puesto de Comida
-                </h3>
-              </div>
-            </Link>
-
-            {/* 3. Tiny Home */}
-            <Link
-              href="/cotizar/modelo-estandar"
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl
-                         bg-slate-100 transition-all duration-200
-                         hover:shadow-2xl hover:scale-[1.02]"
-            >
-              <img
-                src="/gallery/tiny-home.webp"
-                alt="Tiny Home"
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white text-xl sm:text-2xl font-bold leading-tight">
-                  Tiny Home
-                </h3>
-              </div>
-            </Link>
-
-            {/* 4. Casa de Playa */}
-            <Link
-              href="/cotizar/personalizado"
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl
-                         bg-slate-100 transition-all duration-200
-                         hover:shadow-2xl hover:scale-[1.02]"
-            >
-              <img
-                src="/gallery/airbnb.webp"
-                alt="Casa de Playa"
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white text-xl sm:text-2xl font-bold leading-tight">
-                  Casa de Playa
-                </h3>
-              </div>
-            </Link>
-
-            {/* 5. Restaurante */}
-            <Link
-              href="/cotizar/personalizado"
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl
-                         bg-slate-100 transition-all duration-200
-                         hover:shadow-2xl hover:scale-[1.02]"
-            >
-              <img
-                src="/gallery/restaurante.webp"
-                alt="Restaurante"
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white text-xl sm:text-2xl font-bold leading-tight">
-                  Restaurante
-                </h3>
-              </div>
-            </Link>
-
-            {/* 6. Oficinas Corporativas */}
-            <Link
-              href="/cotizar/personalizado"
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl
-                         bg-slate-100 transition-all duration-200
-                         hover:shadow-2xl hover:scale-[1.02]"
-            >
-              <img
-                src="/gallery/oficinas-corporativas.webp"
-                alt="Oficinas Corporativas"
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white text-xl sm:text-2xl font-bold leading-tight">
-                  Oficinas Corporativas
-                </h3>
-              </div>
-            </Link>
-
-            {/* 7. Bodega Permanente - ELIMINADO */}
-
-            {/* 8. Plaza Comercial */}
-            <Link
-              href="/cotizar/personalizado"
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl
-                         bg-slate-100 transition-all duration-200
-                         hover:shadow-2xl hover:scale-[1.02]"
-            >
-              <img
-                src="/gallery/plaza.webp"
-                alt="Plaza Comercial"
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white text-xl sm:text-2xl font-bold leading-tight">
-                  Plaza Comercial
-                </h3>
-              </div>
-            </Link>
-
-            {/* 9. Casa de Lujo */}
-            <Link
-              href="/cotizar/personalizado"
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl
-                         bg-slate-100 transition-all duration-200
-                         hover:shadow-2xl hover:scale-[1.02]"
-            >
-              <img
-                src="/gallery/casa-lujo.webp"
-                alt="Casa de Lujo"
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-white text-xl sm:text-2xl font-bold leading-tight">
-                  Casa de Lujo
-                </h3>
-              </div>
-            </Link>
-
+            {GALLERY_IMAGES.map((item, index) => (
+              <button
+                key={index}
+                onClick={() => openLightbox(index)}
+                className="group relative aspect-[4/3] overflow-hidden rounded-2xl
+                           bg-slate-100 transition-all duration-200
+                           hover:shadow-2xl hover:scale-[1.02] cursor-pointer"
+                aria-label={`Ver ${item.alt} en tamaño completo`}
+              >
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-xl sm:text-2xl font-bold leading-tight">
+                    {item.alt}
+                  </h3>
+                </div>
+              </button>
+            ))}
           </div>
         </div>
+
+        {/* Lightbox */}
+        <ImageLightbox
+          images={GALLERY_IMAGES.map(img => img.src)}
+          currentIndex={currentImageIndex}
+          isOpen={lightboxOpen}
+          onClose={closeLightbox}
+          onNavigate={handleNavigate}
+        />
       </section>
 
       {/* CÓMO FUNCIONA EL SERVICIO */}

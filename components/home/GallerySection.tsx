@@ -1,12 +1,15 @@
-import Link from 'next/link';
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
+import { ImageLightbox } from '@/components/ui/ImageLightbox';
 
 // Type-safe data structure
 interface GalleryItem {
   id: number;
-  image: string; // Placeholder por ahora
+  image: string;
   title: string;
-  landing: string;
+  landing: string; // Mantenido para uso futuro si se necesita
 }
 
 // Data minimalista - 9 casos de uso
@@ -68,6 +71,25 @@ const GALLERY_ITEMS: GalleryItem[] = [
 ];
 
 export default function GallerySection() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  const handleNavigate = (newIndex: number) => {
+    setCurrentImageIndex(newIndex);
+  };
+
+  // Extraer solo las URLs de imágenes para el lightbox
+  const imageUrls = GALLERY_ITEMS.map(item => item.image);
+
   return (
     <section className="py-10 sm:py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,13 +107,14 @@ export default function GallerySection() {
 
         {/* Grid: 2 col mobile, 3 desktop */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-          {GALLERY_ITEMS.map((item) => (
-            <Link
+          {GALLERY_ITEMS.map((item, index) => (
+            <button
               key={item.id}
-              href={item.landing}
+              onClick={() => openLightbox(index)}
               className="group relative aspect-[4/3] overflow-hidden rounded-2xl
                          bg-slate-100 transition-all duration-200
-                         hover:shadow-2xl hover:scale-[1.02]"
+                         hover:shadow-2xl hover:scale-[1.02] cursor-pointer"
+              aria-label={`Ver ${item.title} en tamaño completo`}
             >
               {/* Imagen real optimizada */}
               <Image
@@ -111,10 +134,19 @@ export default function GallerySection() {
                   {item.title}
                 </h3>
               </div>
-            </Link>
+            </button>
           ))}
         </div>
       </div>
+
+      {/* Lightbox */}
+      <ImageLightbox
+        images={imageUrls}
+        currentIndex={currentImageIndex}
+        isOpen={lightboxOpen}
+        onClose={closeLightbox}
+        onNavigate={handleNavigate}
+      />
     </section>
   );
 }
