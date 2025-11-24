@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   // Estado para controlar dropdown de Proyectos
@@ -32,13 +33,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#D32F2F] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">SMI</span>
-            </div>
-            <span className="font-semibold text-slate-900 hidden sm:block">
-              SMI Contenedores
-            </span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="SMI Contenedores"
+              width={120}
+              height={40}
+              className="h-8 sm:h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
