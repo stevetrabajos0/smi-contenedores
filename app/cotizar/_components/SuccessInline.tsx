@@ -120,13 +120,13 @@ export default function SuccessInline({
               ¿Tienes dudas? ¡Contáctanos ahora!
             </h3>
             <p className="text-sm text-gray-600 mb-4">
-              Nuestro equipo está listo para atenderte y resolver cualquier pregunta sobre tu proyecto
+              Escríbenos por WhatsApp
             </p>
             <button
               onClick={handleWhatsAppClick}
-              className="w-full sm:w-auto px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2"
+              className="px-5 py-2.5 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-lg shadow-sm hover:shadow transition-all flex items-center justify-center gap-2"
             >
-              <MessageCircle className="w-5 h-5" />
+              <MessageCircle className="w-4 h-4" />
               Chatear por WhatsApp
             </button>
           </div>

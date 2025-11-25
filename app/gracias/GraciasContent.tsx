@@ -178,17 +178,17 @@ export default function GraciasContent() {
               ¿Tienes dudas? ¡Contáctanos ahora!
             </h3>
             <p className="text-gray-600 mb-4">
-              Nuestro equipo está listo para atenderte y resolver cualquier pregunta sobre tu cotización.
+              Escríbenos por WhatsApp
             </p>
 
             <a
               href={`https://wa.me/526621030059?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full px-6 py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors shadow-md"
+              className="inline-flex items-center justify-center px-5 py-2.5 bg-green-600 text-white text-sm rounded-lg font-medium hover:bg-green-700 shadow-sm hover:shadow transition-all"
             >
               <svg
-                className="w-5 h-5 mr-2"
+                className="w-4 h-4 mr-2"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
