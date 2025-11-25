@@ -47,10 +47,12 @@ export default function HomePage() {
                          rounded-xl p-4 sm:p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
                          cursor-pointer"
             >
-              <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">🏠</div>
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
-                Casas y Oficinas Listas
-              </h3>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xl sm:text-2xl">🏠</span>
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900">
+                  Casas y Oficinas Listas
+                </h3>
+              </div>
               <p className="text-sm text-slate-600 mb-2 sm:mb-3">
                 Espacios equipados en 4-8 semanas
               </p>
@@ -76,10 +78,12 @@ export default function HomePage() {
                          rounded-xl p-4 sm:p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
                          cursor-pointer"
             >
-              <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📦</div>
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
-                Almacenamiento
-              </h3>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xl sm:text-2xl">📦</span>
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900">
+                  Almacenamiento
+                </h3>
+              </div>
               <p className="text-sm text-slate-600 mb-2 sm:mb-3">
                 Renta o compra, entrega 24-48h
               </p>
@@ -105,10 +109,12 @@ export default function HomePage() {
                          rounded-xl p-4 sm:p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1
                          cursor-pointer"
             >
-              <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">🏗️</div>
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
-                A Tu Medida
-              </h3>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xl sm:text-2xl">🏗️</span>
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900">
+                  A Tu Medida
+                </h3>
+              </div>
               <p className="text-sm text-slate-600 mb-2 sm:mb-3">
                 Diseñado específicamente para ti
               </p>
