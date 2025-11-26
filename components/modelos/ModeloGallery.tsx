@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import { ImageLightbox } from '@/components/ui/ImageLightbox';
 
 interface ModeloGalleryProps {
   imagenes: string[];
@@ -9,7 +10,7 @@ interface ModeloGalleryProps {
 
 export default function ModeloGallery({ imagenes, nombre }: ModeloGalleryProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [showLightbox, setShowLightbox] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const nextImage = () => {
     setCurrentIndex((prev) => (prev + 1) % imagenes.length);
@@ -20,6 +21,10 @@ export default function ModeloGallery({ imagenes, nombre }: ModeloGalleryProps) 
   };
 
   const goToImage = (index: number) => {
+    setCurrentIndex(index);
+  };
+
+  const handleNavigate = (index: number) => {
     setCurrentIndex(index);
   };
 
@@ -37,7 +42,7 @@ export default function ModeloGallery({ imagenes, nombre }: ModeloGalleryProps) 
             priority
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
             className="object-cover cursor-zoom-in"
-            onClick={() => setShowLightbox(true)}
+            onClick={() => setLightboxOpen(true)}
           />
 
           {/* Navegación Arrows */}
@@ -119,69 +124,13 @@ export default function ModeloGallery({ imagenes, nombre }: ModeloGalleryProps) 
       </div>
 
       {/* Lightbox Modal */}
-      {showLightbox && (
-        <div
-          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
-          onClick={() => setShowLightbox(false)}
-        >
-          <button
-            onClick={() => setShowLightbox(false)}
-            className="absolute top-4 right-4 w-12 h-12 bg-white/10 hover:bg-white/20
-                       rounded-full flex items-center justify-center
-                       transition-colors"
-            aria-label="Cerrar"
-          >
-            <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-
-          <div className="relative max-w-7xl w-full h-[90vh]" onClick={(e) => e.stopPropagation()}>
-            <Image
-              src={imagenes[currentIndex]}
-              alt={`${nombre} - Imagen ampliada ${currentIndex + 1}`}
-              fill
-              sizes="100vw"
-              className="object-contain"
-            />
-
-            {/* Navegación en Lightbox */}
-            {imagenes.length > 1 && (
-              <>
-                <button
-                  onClick={(e) => { e.stopPropagation(); prevImage(); }}
-                  className="absolute left-4 top-1/2 -translate-y-1/2
-                             w-14 h-14 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full
-                             flex items-center justify-center transition-colors"
-                >
-                  <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-
-                <button
-                  onClick={(e) => { e.stopPropagation(); nextImage(); }}
-                  className="absolute right-4 top-1/2 -translate-y-1/2
-                             w-14 h-14 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full
-                             flex items-center justify-center transition-colors"
-                >
-                  <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </>
-            )}
-
-            {/* Contador en Lightbox */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2
-                            bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full">
-              <p className="text-sm font-medium text-white">
-                {currentIndex + 1} / {imagenes.length}
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
+      <ImageLightbox
+        images={imagenes}
+        currentIndex={currentIndex}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+        onNavigate={handleNavigate}
+      />
     </>
   );
 }
