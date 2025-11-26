@@ -931,6 +931,20 @@ export default function AlmacenamientoPage() {
                                         <option value="bodega-smi">En bodega SMI (10% descuento adicional)</option>
                                       </select>
                                     </div>
+
+                                    {/* Fecha de entrega */}
+                                    <div className="mb-4">
+                                      <label className="block text-sm font-medium text-slate-700 mb-2">
+                                        Fecha de entrega estimada *
+                                      </label>
+                                      <input
+                                        type="date"
+                                        value={formData.fechaEntrega ? formData.fechaEntrega.toISOString().split('T')[0] : ''}
+                                        onChange={(e) => handleChange('fechaEntrega', e.target.value ? new Date(e.target.value) : null)}
+                                        min={new Date().toISOString().split('T')[0]}
+                                        className="w-full border-2 border-slate-300 focus:border-[#D32F2F] focus:ring-2 focus:ring-[#D32F2F]/20 rounded-lg px-4 py-3 text-base outline-none transition-colors duration-200"
+                                      />
+                                    </div>
                                   </>
                                 )}
 
@@ -1059,6 +1073,20 @@ export default function AlmacenamientoPage() {
                                         <option value="sin-prisa">No tengo prisa</option>
                                       </select>
                                     </div>
+
+                                    {/* Fecha de entrega */}
+                                    <div className="mb-4">
+                                      <label className="block text-sm font-medium text-slate-700 mb-2">
+                                        Fecha de entrega estimada *
+                                      </label>
+                                      <input
+                                        type="date"
+                                        value={formData.fechaEntrega ? formData.fechaEntrega.toISOString().split('T')[0] : ''}
+                                        onChange={(e) => handleChange('fechaEntrega', e.target.value ? new Date(e.target.value) : null)}
+                                        min={new Date().toISOString().split('T')[0]}
+                                        className="w-full border-2 border-slate-300 focus:border-[#D32F2F] focus:ring-2 focus:ring-[#D32F2F]/20 rounded-lg px-4 py-3 text-base outline-none transition-colors duration-200"
+                                      />
+                                    </div>
                                   </>
                                 )}
 
@@ -1106,7 +1134,7 @@ export default function AlmacenamientoPage() {
                                     {/* Fecha Mudanza */}
                                     <div className="mb-4">
                                       <label className="block text-sm font-medium text-slate-700 mb-2">
-                                        Fecha aproximada de mudanza
+                                        Fecha de entrega estimada *
                                       </label>
                                       <input
                                         type="date"
@@ -1151,7 +1179,7 @@ export default function AlmacenamientoPage() {
                                     {/* Fecha Mudanza */}
                                     <div className="mb-4">
                                       <label className="block text-sm font-medium text-slate-700 mb-2">
-                                        Fecha aproximada de entrega
+                                        Fecha de entrega estimada *
                                       </label>
                                       <input
                                         type="date"
