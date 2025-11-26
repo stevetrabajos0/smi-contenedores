@@ -70,20 +70,20 @@ export function ImageLightbox({
       aria-modal="true"
       aria-label="Galería de imágenes"
     >
-      {/* Botón cerrar */}
+      {/* Botón cerrar - fixed para estar siempre visible */}
       <button
-        onClick={onClose}
-        className="absolute top-4 right-4 w-12 h-12 bg-white/10 hover:bg-white/20
+        onClick={(e) => { e.stopPropagation(); onClose(); }}
+        className="fixed top-4 right-4 z-[60] w-12 h-12 bg-white/20 hover:bg-white/30
                    rounded-full flex items-center justify-center
-                   transition-colors z-10"
+                   transition-colors"
         aria-label="Cerrar galería"
       >
         <X className="w-6 h-6 text-white" />
       </button>
 
-      {/* Contenedor de imagen */}
+      {/* Contenedor de imagen - reducido para permitir clicks en backdrop */}
       <div
-        className="relative max-w-7xl w-full h-[90vh]"
+        className="relative max-w-6xl w-full h-[80vh]"
         onClick={(e) => e.stopPropagation()}
       >
         <Image
