@@ -10,7 +10,13 @@ export const modelos = [
     contenedor: '20 pies',
     dimensiones: '6.06m × 2.44m × 2.59m',
     peso: '2,300 kg',
-    imagenes: ['/images/modelos/modelo-20.webp'],
+    imagenes: [
+      '/images/modelos/20-pies/1.webp',
+      '/images/modelos/20-pies/2.webp',
+      '/images/modelos/20-pies/3.webp',
+      '/images/modelos/20-pies/4.webp',
+      '/images/modelos/20-pies/5.webp'
+    ],
     precio_desde: PRECIOS_BASE_MODELOS['20'],
     descripcion: 'Nuestro modelo más vendido. Espacio suficiente para 1 recámara + sala o 4-6 estaciones de trabajo. Listo en 3-4 semanas desde anticipo.',
     use_case: 'Ideal para parejas, oficinas pequeñas o proyectos de renta',
@@ -52,7 +58,13 @@ export const modelos = [
     contenedor: '40 pies',
     dimensiones: '12.19m × 2.44m × 2.59m',
     peso: '3,800 kg',
-    imagenes: ['/images/modelos/modelo-40.webp'],
+    imagenes: [
+      '/images/modelos/40-pies/1.webp',
+      '/images/modelos/40-pies/2.webp',
+      '/images/modelos/40-pies/3.webp',
+      '/images/modelos/40-pies/4.webp',
+      '/images/modelos/40-pies/5.webp'
+    ],
     precio_desde: PRECIOS_BASE_MODELOS['40'],
     descripcion: 'Amplitud y versatilidad para proyectos ambiciosos. Sistema de climatización incluido con distribución flexible para adaptarse a múltiples configuraciones residenciales o comerciales.',
     use_case: 'Perfecto para familias, oficinas completas o negocios con área de atención',
@@ -95,7 +107,13 @@ export const modelos = [
     contenedor: '10 pies',
     dimensiones: '2.99m × 2.44m × 2.59m',
     peso: '2,200 kg',
-    imagenes: ['/images/modelos/modelo-10.webp'],
+    imagenes: [
+      '/images/modelos/10-pies/1.webp',
+      '/images/modelos/10-pies/2.webp',
+      '/images/modelos/10-pies/3.webp',
+      '/images/modelos/10-pies/4.webp',
+      '/images/modelos/10-pies/5.webp'
+    ],
     precio_desde: PRECIOS_BASE_MODELOS['10'],
     descripcion: 'Espacio base compacto listo para personalizar según tu visión. Estructura certificada con todas las instalaciones base incluidas. Ideal para studio individual, oficina compacta o caseta de vigilancia.',
     use_case: 'Perfecto para 1 persona o espacio de trabajo individual',
