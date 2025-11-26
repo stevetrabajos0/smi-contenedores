@@ -684,16 +684,14 @@ export default function AlmacenamientoPage() {
                                     });
                                   }}
                                   className={`
-                                    p-4 rounded-lg border-2 text-center transition-all
+                                    px-3 py-2.5 rounded-lg text-sm font-semibold
+                                    transition-all border-2
                                     ${formData.tipoServicio === 'mudanza'
-                                      ? 'border-[#D32F2F] bg-[#D32F2F]/5 shadow-md'
-                                      : 'border-slate-200 hover:border-slate-300'
-                                    }
+                                      ? 'bg-[#D32F2F] text-white border-[#D32F2F]'
+                                      : 'bg-white text-slate-700 border-slate-300 hover:border-slate-400'}
                                   `}
                                 >
-                                  <div className="text-2xl mb-2">🚚</div>
-                                  <div className="font-semibold text-sm text-slate-900">Mudanza</div>
-                                  <div className="text-xs text-slate-600 mt-1">$60/km</div>
+                                  Mudanza
                                 </button>
 
                                 {/* Almacenamiento */}
@@ -708,16 +706,14 @@ export default function AlmacenamientoPage() {
                                     });
                                   }}
                                   className={`
-                                    p-4 rounded-lg border-2 text-center transition-all
+                                    px-3 py-2.5 rounded-lg text-sm font-semibold
+                                    transition-all border-2
                                     ${formData.tipoServicio === 'almacenamiento'
-                                      ? 'border-[#D32F2F] bg-[#D32F2F]/5 shadow-md'
-                                      : 'border-slate-200 hover:border-slate-300'
-                                    }
+                                      ? 'bg-[#D32F2F] text-white border-[#D32F2F]'
+                                      : 'bg-white text-slate-700 border-slate-300 hover:border-slate-400'}
                                   `}
                                 >
-                                  <div className="text-2xl mb-2">📦</div>
-                                  <div className="font-semibold text-sm text-slate-900">Almacenamiento</div>
-                                  <div className="text-xs text-slate-600 mt-1">Renta o compra</div>
+                                  Almacenamiento
                                 </button>
 
                                 {/* Ambos */}
@@ -732,28 +728,16 @@ export default function AlmacenamientoPage() {
                                     });
                                   }}
                                   className={`
-                                    p-4 rounded-lg border-2 text-center transition-all
+                                    px-3 py-2.5 rounded-lg text-sm font-semibold
+                                    transition-all border-2
                                     ${formData.tipoServicio === 'ambos'
-                                      ? 'border-[#D32F2F] bg-[#D32F2F]/5 shadow-md'
-                                      : 'border-slate-200 hover:border-slate-300'
-                                    }
+                                      ? 'bg-[#D32F2F] text-white border-[#D32F2F]'
+                                      : 'bg-white text-slate-700 border-slate-300 hover:border-slate-400'}
                                   `}
                                 >
-                                  <div className="text-2xl mb-2">📦🚚</div>
-                                  <div className="font-semibold text-sm text-slate-900">Ambos</div>
-                                  <div className="text-xs text-slate-600 mt-1">Renta + mudanza</div>
+                                  Ambos
                                 </button>
                               </div>
-
-                              {/* Helper text nivel 1 */}
-                              {formData.tipoServicio && (
-                                <p className="text-xs text-slate-600 mt-2">
-                                  {formData.tipoServicio === 'mudanza' && 'Servicio puntual de transporte local'}
-                                  {formData.tipoServicio === 'almacenamiento' && 'Elige si rentar o comprar →'}
-                                  {formData.tipoServicio === 'ambos' && 'Renta mensual + servicio de mudanza incluido'}
-                                </p>
-                              )}
-
                               {errors.tipoServicio && (
                                 <p className="text-red-600 text-sm mt-1">{errors.tipoServicio}</p>
                               )}
@@ -762,57 +746,51 @@ export default function AlmacenamientoPage() {
                             {/* NIVEL 2: Modalidad Almacenamiento (SOLO si almacenamiento) */}
                             {formData.tipoServicio === 'almacenamiento' && (
                               <div className="mb-6">
-                                <label className="block text-sm font-semibold text-slate-900 mb-3">
-                                  ¿Prefieres rentar o comprar?
+                                <label className="block text-sm font-medium text-slate-700 mb-2">
+                                  ¿Qué necesitas? *
                                 </label>
-
-                                <div className="grid grid-cols-2 gap-3">
-                                  {/* Renta */}
+                                <div className="grid grid-cols-2 gap-2">
                                   <button
                                     type="button"
-                                    data-modalidad="renta"
                                     onClick={() => setFormData({ ...formData, modalidadAlmacenamiento: 'renta' })}
                                     className={`
-                                      p-4 rounded-lg border-2 text-center transition-all
+                                      px-4 py-3 rounded-lg text-sm font-semibold
+                                      transition-all border-2
                                       ${formData.modalidadAlmacenamiento === 'renta'
-                                        ? 'border-[#D32F2F] bg-[#D32F2F]/5 shadow-md'
-                                        : 'border-slate-200 hover:border-slate-300'
-                                      }
+                                        ? 'bg-[#D32F2F] text-white border-[#D32F2F]'
+                                        : 'bg-white text-slate-700 border-slate-300 hover:border-slate-400'}
                                     `}
                                   >
-                                    <div className="text-2xl mb-2">📦</div>
-                                    <div className="font-semibold text-sm text-slate-900">Renta</div>
-                                    <div className="text-xs text-slate-600 mt-1">Desde $3,000/mes</div>
-                                    <div className="text-xs text-slate-500 mt-1">Sin compromiso largo</div>
+                                    <div className="font-bold mb-0.5">Rentar</div>
+                                    <div className={`text-xs ${
+                                      formData.modalidadAlmacenamiento === 'renta'
+                                        ? 'text-white/80'
+                                        : 'text-slate-500'
+                                    }`}>
+                                      Por periodo de tiempo
+                                    </div>
                                   </button>
-
-                                  {/* Compra */}
                                   <button
                                     type="button"
-                                    data-modalidad="compra"
                                     onClick={() => setFormData({ ...formData, modalidadAlmacenamiento: 'compra' })}
                                     className={`
-                                      p-4 rounded-lg border-2 text-center transition-all
+                                      px-4 py-3 rounded-lg text-sm font-semibold
+                                      transition-all border-2
                                       ${formData.modalidadAlmacenamiento === 'compra'
-                                        ? 'border-[#D32F2F] bg-[#D32F2F]/5 shadow-md'
-                                        : 'border-slate-200 hover:border-slate-300'
-                                      }
+                                        ? 'bg-[#D32F2F] text-white border-[#D32F2F]'
+                                        : 'bg-white text-slate-700 border-slate-300 hover:border-slate-400'}
                                     `}
                                   >
-                                    <div className="text-2xl mb-2">🏢</div>
-                                    <div className="font-semibold text-sm text-slate-900">Compra</div>
-                                    <div className="text-xs text-slate-600 mt-1">Desde $55,000</div>
-                                    <div className="text-xs text-slate-500 mt-1">Inversión permanente</div>
+                                    <div className="font-bold mb-0.5">Comprar</div>
+                                    <div className={`text-xs ${
+                                      formData.modalidadAlmacenamiento === 'compra'
+                                        ? 'text-white/80'
+                                        : 'text-slate-500'
+                                    }`}>
+                                      Adquirir el contenedor
+                                    </div>
                                   </button>
                                 </div>
-
-                                {/* Helper text nivel 2 */}
-                                {formData.modalidadAlmacenamiento && (
-                                  <p className="text-xs text-slate-600 mt-2">
-                                    {formData.modalidadAlmacenamiento === 'renta' && 'Flexible - Cancela cuando quieras con 15 días de aviso'}
-                                    {formData.modalidadAlmacenamiento === 'compra' && 'Recuperas tu inversión en 12-21 meses vs renta'}
-                                  </p>
-                                )}
                               </div>
                             )}
 
@@ -821,10 +799,8 @@ export default function AlmacenamientoPage() {
 
                             {/* Código Postal */}
                             <div>
-                              <label className="block text-sm font-medium text-slate-900 mb-2">
-                                {formData.tipoServicio === 'mudanza'
-                                  ? '¿De dónde te mudas?'
-                                  : '¿Dónde te encuentras?'} *
+                              <label className="block text-sm font-medium text-slate-700 mb-2">
+                                Código postal de entrega *
                               </label>
                               <div className="relative">
                                 <input
