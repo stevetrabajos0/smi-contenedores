@@ -92,14 +92,14 @@ export default function ModeloGallery({ imagenes, nombre }: ModeloGalleryProps) 
           </div>
         </div>
 
-        {/* Thumbnails */}
+        {/* Thumbnails - Grid responsive */}
         {imagenes.length > 1 && (
-          <div className="flex gap-2 overflow-x-auto pb-2">
+          <div className="grid grid-cols-5 gap-1 sm:gap-2">
             {imagenes.map((imagen, index) => (
               <button
                 key={index}
                 onClick={() => goToImage(index)}
-                className={`relative flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden
+                className={`relative aspect-square w-full rounded-lg overflow-hidden
                            border-2 transition-all
                            ${index === currentIndex
                              ? 'border-[#D32F2F] ring-2 ring-[#D32F2F]/20'
@@ -108,8 +108,8 @@ export default function ModeloGallery({ imagenes, nombre }: ModeloGalleryProps) 
                 <Image
                   src={imagen}
                   alt={`Thumbnail ${index + 1}`}
-                  width={80}
-                  height={80}
+                  fill
+                  sizes="20vw"
                   className="object-cover"
                 />
               </button>
