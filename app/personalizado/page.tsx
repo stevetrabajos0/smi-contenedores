@@ -608,7 +608,7 @@ export default function PersonalizadoLandingPage() {
               ¿Tienes más preguntas?
             </p>
             <a
-              href="https://wa.me/5216621030059?text=Hola,%20tengo%20preguntas%20sobre%20proyectos%20personalizados"
+              href="https://wa.me/5216621553087?text=Hola,%20tengo%20preguntas%20sobre%20proyectos%20personalizados"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20BA5A]

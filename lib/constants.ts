@@ -52,14 +52,14 @@ export function formatWhatsAppNumber(phoneNumber: string): string {
 /**
  * Número de WhatsApp de SMI Contenedores
  * Formato: 10 dígitos (número local mexicano)
- * Ejemplo: 6621030059 para Hermosillo, Sonora
+ * Ejemplo: 6621553087 para Hermosillo, Sonora
  */
-export const SMI_WHATSAPP_NUMBER = '6621030059';
+export const SMI_WHATSAPP_NUMBER = '6621553087';
 
 /**
  * Número de WhatsApp formateado para display (con formato legible)
  */
-export const SMI_WHATSAPP_DISPLAY = '(662) 103-0059';
+export const SMI_WHATSAPP_DISPLAY = '(662) 155-3087';
 
 /**
  * URL completa de WhatsApp (pre-calculada para performance)

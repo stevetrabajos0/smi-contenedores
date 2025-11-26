@@ -17,7 +17,7 @@ export default function SuccessInline({
 }: SuccessInlineProps) {
   const handleWhatsAppClick = () => {
     const message = `Hola, acabo de enviar una cotización para ${projectType}. Me gustaría recibir más información.`;
-    const whatsappUrl = `https://wa.me/5216621030059?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5216621553087?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -139,11 +139,11 @@ export default function SuccessInline({
           También puedes contactarnos por teléfono
         </p>
         <a
-          href="tel:+526621030059"
+          href="tel:+526621553087"
           className="inline-flex items-center gap-2 text-lg font-semibold text-[#D32F2F] hover:text-[#B71C1C] transition-colors"
         >
           <Phone className="w-5 h-5" />
-          (662) 103-0059
+          (662) 155-3087
         </a>
       </div>
     </div>

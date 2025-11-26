@@ -182,7 +182,7 @@ export default function GraciasContent() {
             </p>
 
             <a
-              href={`https://wa.me/526621030059?text=${whatsappMessage}`}
+              href={`https://wa.me/5216621553087?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-5 py-2.5 bg-green-600 text-white text-sm rounded-lg font-medium hover:bg-green-700 shadow-sm hover:shadow transition-all"

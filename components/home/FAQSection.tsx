@@ -34,7 +34,7 @@ const FAQS: FAQ[] = [
   {
     id: 5,
     pregunta: '¿Puedo visitar el taller antes de comprar?',
-    respuesta: '¡Claro! Estamos en Hermosillo, Sonora. Puedes ver contenedores reales, proyectos en construcción y hablar con nuestro equipo. Horario: L-V 8am-6pm, S 8am-2pm. Agenda tu visita por WhatsApp: 662-103-0059'
+    respuesta: '¡Claro! Estamos en Hermosillo, Sonora. Puedes ver contenedores reales, proyectos en construcción y hablar con nuestro equipo. Horario: L-V 8am-6pm, S 8am-2pm. Agenda tu visita por WhatsApp: 662-155-3087'
   },
   {
     id: 6,
@@ -117,7 +117,7 @@ export default function FAQSection() {
             ¿Tienes más preguntas?
           </p>
           <a
-            href="https://wa.me/5216621030059"
+            href="https://wa.me/5216621553087"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BA5A]

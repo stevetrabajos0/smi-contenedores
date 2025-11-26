@@ -224,7 +224,7 @@ export default function CotizarPage() {
             Platicamos contigo para entender tu necesidad y recomendarte la mejor solución.
           </p>
           <a
-            href="https://wa.me/6621030059?text=Hola,%20necesito%20asesor%C3%ADa%20para%20elegir%20el%20servicio%20correcto"
+            href="https://wa.me/5216621553087?text=Hola,%20necesito%20asesor%C3%ADa%20para%20elegir%20el%20servicio%20correcto"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors shadow-lg hover:shadow-xl"

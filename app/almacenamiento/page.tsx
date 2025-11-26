@@ -532,7 +532,7 @@ export default function AlmacenamientoPage() {
                                 ¿Tienes dudas urgentes?
                               </p>
                               <a
-                                href="https://wa.me/5216621030059?text=Hola,%20tengo%20una%20duda%20sobre%20mi%20cotización"
+                                href="https://wa.me/5216621553087?text=Hola,%20tengo%20una%20duda%20sobre%20mi%20cotización"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-[#D32F2F] hover:text-[#B71C1C] font-medium transition-colors text-sm inline-flex items-center gap-1"
@@ -1619,7 +1619,7 @@ export default function AlmacenamientoPage() {
                 ¿No estás seguro cuál necesitas?
               </p>
               <a
-                href="https://wa.me/6621030059?text=Hola,%20necesito%20ayuda%20para%20decidir%20qué%20servicio%20me%20conviene"
+                href="https://wa.me/5216621553087?text=Hola,%20necesito%20ayuda%20para%20decidir%20qué%20servicio%20me%20conviene"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold transition-colors"
@@ -2175,7 +2175,7 @@ export default function AlmacenamientoPage() {
                 ¿Tienes otra pregunta?
               </p>
               <a
-                href="https://wa.me/6621030059?text=Hola,%20tengo%20una%20pregunta%20sobre%20los%20servicios%20de%20almacenamiento"
+                href="https://wa.me/5216621553087?text=Hola,%20tengo%20una%20pregunta%20sobre%20los%20servicios%20de%20almacenamiento"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20BA5A]
