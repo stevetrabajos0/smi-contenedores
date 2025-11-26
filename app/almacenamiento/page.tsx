@@ -941,8 +941,9 @@ export default function AlmacenamientoPage() {
                                         type="date"
                                         value={formData.fechaEntrega ? formData.fechaEntrega.toISOString().split('T')[0] : ''}
                                         onChange={(e) => handleChange('fechaEntrega', e.target.value ? new Date(e.target.value) : null)}
+                                        onClick={(e) => e.currentTarget.showPicker()}
                                         min={new Date().toISOString().split('T')[0]}
-                                        className="w-full border-2 border-slate-300 focus:border-[#D32F2F] focus:ring-2 focus:ring-[#D32F2F]/20 rounded-lg px-4 py-3 text-base outline-none transition-colors duration-200"
+                                        className="w-full border-2 border-slate-300 focus:border-[#D32F2F] focus:ring-2 focus:ring-[#D32F2F]/20 rounded-lg px-4 py-3 text-base outline-none transition-colors duration-200 cursor-pointer"
                                       />
                                     </div>
                                   </>
@@ -1083,8 +1084,9 @@ export default function AlmacenamientoPage() {
                                         type="date"
                                         value={formData.fechaEntrega ? formData.fechaEntrega.toISOString().split('T')[0] : ''}
                                         onChange={(e) => handleChange('fechaEntrega', e.target.value ? new Date(e.target.value) : null)}
+                                        onClick={(e) => e.currentTarget.showPicker()}
                                         min={new Date().toISOString().split('T')[0]}
-                                        className="w-full border-2 border-slate-300 focus:border-[#D32F2F] focus:ring-2 focus:ring-[#D32F2F]/20 rounded-lg px-4 py-3 text-base outline-none transition-colors duration-200"
+                                        className="w-full border-2 border-slate-300 focus:border-[#D32F2F] focus:ring-2 focus:ring-[#D32F2F]/20 rounded-lg px-4 py-3 text-base outline-none transition-colors duration-200 cursor-pointer"
                                       />
                                     </div>
                                   </>
@@ -1141,8 +1143,9 @@ export default function AlmacenamientoPage() {
                                         name="fechaMudanza"
                                         value={formData.fechaEntrega ? formData.fechaEntrega.toISOString().split('T')[0] : ''}
                                         onChange={(e) => handleChange('fechaEntrega', e.target.value ? new Date(e.target.value) : null)}
+                                        onClick={(e) => e.currentTarget.showPicker()}
                                         min={new Date().toISOString().split('T')[0]}
-                                        className="w-full border-2 border-slate-300 focus:border-[#D32F2F] focus:ring-2 focus:ring-[#D32F2F]/20 rounded-lg px-4 py-3 text-base outline-none transition-colors duration-200"
+                                        className="w-full border-2 border-slate-300 focus:border-[#D32F2F] focus:ring-2 focus:ring-[#D32F2F]/20 rounded-lg px-4 py-3 text-base outline-none transition-colors duration-200 cursor-pointer"
                                       />
                                     </div>
                                   </>
@@ -1186,8 +1189,9 @@ export default function AlmacenamientoPage() {
                                         name="fechaMudanza"
                                         value={formData.fechaEntrega ? formData.fechaEntrega.toISOString().split('T')[0] : ''}
                                         onChange={(e) => handleChange('fechaEntrega', e.target.value ? new Date(e.target.value) : null)}
+                                        onClick={(e) => e.currentTarget.showPicker()}
                                         min={new Date().toISOString().split('T')[0]}
-                                        className="w-full border-2 border-slate-300 focus:border-[#D32F2F] focus:ring-2 focus:ring-[#D32F2F]/20 rounded-lg px-4 py-3 text-base outline-none transition-colors duration-200"
+                                        className="w-full border-2 border-slate-300 focus:border-[#D32F2F] focus:ring-2 focus:ring-[#D32F2F]/20 rounded-lg px-4 py-3 text-base outline-none transition-colors duration-200 cursor-pointer"
                                       />
                                     </div>
                                   </>
